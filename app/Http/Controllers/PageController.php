@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\talent;
 use App\Models\PPDB;
+use App\Models\Katalogtalenta;
+
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -45,6 +47,9 @@ class PageController extends Controller
     {
         $allTalent = talent::orderBy('id','asc')->paginate(4);
         return view("pages.talent")->with('allTalent', $allTalent);
+
+        $katalogtalenta = katalogtalenta::get();
+        return view("pages.katalogtalenta")->with('katalogtalenta', $katalogtalenta);
     }
 
     public function team()
