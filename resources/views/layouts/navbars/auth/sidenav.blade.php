@@ -4,7 +4,7 @@
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href="{{ route('dashboard') }}" >
-            <img src="./img/logo-ct.png" class="navbar-img h-100" alt="logo-ct">
+            <img src="{{asset('./img/logo-ct.png')}}" class="navbar-img h-100" alt="logo-ct">
             <span class="ms-1 font-weight-bold">Bazma Web</span>
         </a>
     </div>
@@ -130,9 +130,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'billing') == true ? 'active' : '' }}"
+                <a class="nav-link {{ str_contains(request()->url(), 'katalogtalenta') == true ? 'active' : '' }}"
                     href=
-                    "{{ route('page', ['page' => 'billing']) }}"
+                    "{{ route('page', ['page' => 'katalogtalenta']) }}"
                     >
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
@@ -142,9 +142,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() == 'virtual-reality' ? 'active' : '' }}"
-                    href=#
-                    {{-- "{{ route('virtual-reality') }}" --}}
+                <a class="nav-link {{  str_contains(request()->url(), 'ppdb') == true ? 'active' : '' }}"
+                    href=
+                    "{{ route('page', ['page' => 'ppdb']) }}"
                     >
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">

@@ -25,8 +25,10 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
+// use App\Http\Controllers\PPDB;
 use App\Http\Controllers\UserManagementController;
-
+use App\Http\Controllers\PPDBController;
+use App\Http\Controllers\KatalogTalentaController;
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');
@@ -36,7 +38,7 @@ Route::get('/talent', [PageController::class, 'talent'])->name('talent');
 Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/donasi', [PageController::class, 'donasi'])->name('donasi');
 Route::get('/mitra', [PageController::class, 'mitra'])->name('mitra');
-Route::get('/ppdb', [PageController::class, 'ppdb'])->name('ppdb');
+Route::get('/ppdbs', [PageController::class, 'ppdb'])->name('ppdb');
 
 
 Route::get('/dashboard', function () {return redirect('/dashboard');})->middleware('auth');
@@ -50,15 +52,28 @@ Route::get('/dashboard', function () {return redirect('/dashboard');})->middlewa
 	Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard')->middleware('auth');
 
+
+
 Route::group(['middleware' => 'auth'], function () {
 	Route::get('/user-management/create', [UserManagementController::class, 'index'])->name('index');
 	Route::get('/virtual-reality', [AdminPageController::class, 'vr'])->name('virtual-reality');
 	Route::get('/rtl', [AdminPageController::class, 'rtl'])->name('rtl');
 	Route::get('/profile', [UserProfileController::class, 'show'])->name('profile');
 	Route::post('/profile', [UserProfileController::class, 'update'])->name('profile.update');
-	Route::get('/profile-static', [AdminPageController::class, 'profile'])->name('profile-static'); 
+	Route::get('/profile-static', [AdminPageController::class, 'profile'])->name('profile-static');
 	Route::get('/sign-in-static', [AdminPageController::class, 'signin'])->name('sign-in-static');
-	Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static'); 
+	Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static');
+
+	Route::get('katalogtalenta', [KatalogTalentaController::class, 'index']);
+    Route::get('katalogtalenta/create', [KatalogTalentaController::class, 'create']);
+    Route::post('katalogtalenta', [KatalogTalentaController::class, 'store'])->name('katalogtalenta.store');
+    Route::put('katalogtalenta/{id}', [KatalogTalentaController::class, 'update']);
+    Route::get('katalogtalenta/{id}/edit', [KatalogTalentaController::class, 'edit']);
+    Route::delete('katalogtalenta/{id}', [KatalogTalentaController::class, 'destroy']);
+
+
+
+    Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+    Route::resource('ppdb', PPDBController::class);
 	Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
-	Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 });
