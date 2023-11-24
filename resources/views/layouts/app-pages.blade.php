@@ -11,8 +11,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
     <!-- Nucleo Icons -->
-    <link href="./template/assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="./template/assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="{{asset('./template/assets/css/nucleo-icons.css')}}" rel="stylesheet" />
+    <link href="{{asset('./template/assets/css/nucleo-svg.css')}}" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8cf86726f0.js" crossorigin="anonymous"></script>
@@ -23,7 +23,7 @@
         href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css" />
     <!-- CSS Files -->
-    <link id="pagestyle" href="./template/assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+    <link id="pagestyle" href="{{asset('./template/assets/css/material-kit.css?v=3.0.4')}}" rel="stylesheet" />
     <!-- Nepcha Analytics (nepcha.com) -->
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
     <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
@@ -42,15 +42,15 @@
     @include('layouts.footers.guest.footer')
 
     <!--   Core JS Files   -->
-    <script src="./template/assets/js/core/popper.min.js" type="text/javascript"></script>
-    <script src="./template/assets/js/core/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./template/assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="{{asset('./template/assets/js/core/popper.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('./template/assets/js/core/bootstrap.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('./template/assets/js/plugins/perfect-scrollbar.min.js')}}"></script>
     <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
     <script src="./template/assets/js/plugins/countup.min.js"></script>
     <!-- Control Center for Material UI Kit: parallax effects, scripts for the example template etc -->
     <!--  Google Maps Plugin    -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
-    <script src="./template/assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+    <script src="{{asset('./template/assets/js/material-kit.min.js?v=3.0.4')}}" type="text/javascript"></script>
     <script>
         // get the element to animate
         var element = document.getElementById("count-stats");

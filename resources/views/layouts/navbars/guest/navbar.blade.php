@@ -6,7 +6,7 @@
                     class="navbar navbar-expand-lg card border-radius-xl mt-4 top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-2">
                     <div class="container-fluid px-0 phenomena-bold">
                         <a class="navbar-brand text-white ms-sm-0" href="/" rel="tooltip"></a>
-                        <img src="./template/assets/img/smktibazma-1.png" alt="" style="width: 130px" />
+                        <img src="{{asset('./template/assets/img/smktibazma-1.png')}}" alt="" style="width: 130px" />
                         </a>
                         <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
@@ -34,9 +34,9 @@
                                         id="dropdownMenuPages8" data-bs-toggle="dropdown" aria-expanded="false"
                                         style="font-size: 18px">
                                         Kesiswaan
-                                        <img src="./template/assets/img/down-arrow-dark.svg" alt="down-arrow"
+                                        <img src="{{asset('./template/assets/img/down-arrow-dark.svg')}}" alt="down-arrow"
                                             class="arrow ms-2 d-lg-block d-none" />
-                                        <img src="./template/assets/img/down-arrow-dark.svg" alt="down-arrow"
+                                        <img src="{{asset('./template/assets/img/down-arrow-dark.svg')}}" alt="down-arrow"
                                             class="arrow ms-2 d-lg-none d-block" />
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-lg mt-0 mt-lg-3"
@@ -91,9 +91,9 @@
                                         id="dropdownMenutemplate8" data-bs-toggle="dropdown" aria-expanded="false"
                                         style="font-size: 18px">
                                         Informasi
-                                        <img src="./template/assets/img/down-arrow-dark.svg" alt="down-arrow"
+                                        <img src="{{asset('./template/assets/img/down-arrow-dark.svg')}}" alt="down-arrow"
                                             class="arrow ms-2 d-lg-block d-none" />
-                                        <img src="./template/assets/img/down-arrow-dark.svg" alt="down-arrow"
+                                        <img src="{{asset('./template/assets/img/down-arrow-dark.svg')}}" alt="down-arrow"
                                             class="arrow ms-2 d-lg-none d-block" />
                                     </a>
                                     <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-lg mt-0 mt-lg-3"

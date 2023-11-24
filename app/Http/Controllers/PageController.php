@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Postingan;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -64,4 +65,15 @@ class PageController extends Controller
         return view("pages.mitra");
     }
 
+    public function berita()
+    {
+        $allPostingan = Postingan::get();
+        return view('pages.berita')->with(['allPostingan'=> $allPostingan]);
+    }
+
+    public function singleBerita()
+    {
+        $allPostingan = Postingan::get();
+        return view('pages.singleBerita')->with(['allPostingan'=> $allPostingan]);
+    }
 }
