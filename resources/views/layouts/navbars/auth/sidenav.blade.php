@@ -140,9 +140,10 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'billing') == true ? 'active' : '' }}"
+                <a class="nav-link {{ str_contains(request()->url(), 'katalogtalenta') == true ? 'active' : '' }}"
                     href=
-                    "{{ route('page', ['page' => 'billing']) }}">
+                    "{{ route('page', ['page' => 'billing']) }}"
+                    >
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-credit-card text-dark text-sm opacity-10"></i>
@@ -151,8 +152,10 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() == 'virtual-reality' ? 'active' : '' }}" href=#
-                    {{-- "{{ route('virtual-reality') }}" --}}>
+                <a class="nav-link {{ Route::currentRouteName() == 'virtual-reality' ? 'active' : '' }}"
+                    href=#
+                    {{-- "{{ route('virtual-reality') }}" --}}
+                    >
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-app text-dark text-sm opacity-10"></i>

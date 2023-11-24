@@ -28,7 +28,10 @@ use App\Http\Controllers\ChangePassword;
 // use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
-
+// use App\Http\Controllers\PPDB;
+use App\Http\Controllers\UserManagementController;
+use App\Http\Controllers\PPDBController;
+use App\Http\Controllers\KatalogTalentaController;
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');
@@ -38,7 +41,7 @@ Route::get('/talent', [PageController::class, 'talent'])->name('talent');
 Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/donasi', [PageController::class, 'donasi'])->name('donasi');
 Route::get('/mitra', [PageController::class, 'mitra'])->name('mitra');
-Route::get('/ppdb', [PageController::class, 'ppdb'])->name('ppdb');
+Route::get('/ppdbs', [PageController::class, 'ppdb'])->name('ppdb');
 
 
 Route::get('/dashboard', function () {
@@ -53,6 +56,8 @@ Route::post('/reset-password', [ResetPassword::class, 'send'])->middleware('gues
 Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');
 Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard')->middleware('auth');
+
+
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -72,7 +77,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/profile', [UserProfileController::class, 'update'])->name('profile.update');
 	Route::get('/profile-static', [AdminPageController::class, 'profile'])->name('profile-static');
 	Route::get('/sign-in-static', [AdminPageController::class, 'signin'])->name('sign-in-static');
-	Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static');
+	Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static'); 
 	Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
-	Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 });

@@ -106,7 +106,7 @@
                                             <a href="/donasi" class="dropdown-item border-radius-md">
                                                 <span>Donasi</span>
                                             </a>
-                                            <a href="/ppdb" class="dropdown-item border-radius-md">
+                                            <a href="/ppdbs" class="dropdown-item border-radius-md">
                                                 <span>PPDB</span>
                                             </a>
                                             <a href="/berita" class="dropdown-item border-radius-md">
@@ -121,7 +121,7 @@
                                             <a href="/donasi" class="dropdown-item border-radius-md">
                                                 <span>Donasi</span>
                                             </a>
-                                            <a href="/ppdb" class="dropdown-item border-radius-md">
+                                            <a href="/ppdbs" class="dropdown-item border-radius-md">
                                                 <span>PPDB</span>
                                             </a>
                                             <a href="/berita" class="dropdown-item border-radius-md">

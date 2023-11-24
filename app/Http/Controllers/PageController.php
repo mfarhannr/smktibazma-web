@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\talent;
+use App\Models\PPDB;
+use App\Models\Katalogtalenta;
+
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -12,14 +16,14 @@ class PageController extends Controller
      * @param string $page
      * @return \Illuminate\View\View
      */
-    public function index(string $page)
-    {
-        if (view()->exists("pages.{$page}")) {
-            return view("pages.{$page}");
-        }
+    // public function index(string $page)
+    // {
+    //     if (view()->exists("pages.{$page}")) {
+    //         return view("pages.{$page}");
+    //     }
 
-        return abort(404);
-    }
+    //     return abort(404);
+    // }
 
     public function beranda()
     {
@@ -41,7 +45,11 @@ class PageController extends Controller
     }
     public function talent()
     {
-        return view("pages.talent");
+        $allTalent = talent::orderBy('id','asc')->paginate(4);
+        return view("pages.talent")->with('allTalent', $allTalent);
+
+        $katalogtalenta = katalogtalenta::get();
+        return view("pages.katalogtalenta")->with('katalogtalenta', $katalogtalenta);
     }
 
     public function team()
@@ -56,7 +64,8 @@ class PageController extends Controller
 
     public function ppdb()
     {
-        return view("pages.ppdb");
+        $ppdb = PPDB::get();
+        return view("pages.ppdb")->with('ppdb', $ppdb);
     }
 
     public function mitra()
