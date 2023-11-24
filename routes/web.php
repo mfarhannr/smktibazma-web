@@ -25,7 +25,12 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
+<<<<<<< HEAD
 // use App\Http\Controllers\PPDB;
+=======
+use App\Http\Controllers\KategoriPostinganContoller;
+use App\Http\Controllers\PostinganController;
+>>>>>>> arya
 use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\PPDBController;
 use App\Http\Controllers\KatalogTalentaController;
@@ -45,6 +50,7 @@ Route::get('/talent', [PageController::class, 'talent'])->name('talent');
 Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/donasi', [PageController::class, 'donasi'])->name('donasi');
 Route::get('/mitra', [PageController::class, 'mitra'])->name('mitra');
+<<<<<<< HEAD
 Route::get('/ppdbs', [PageController::class, 'ppdb'])->name('ppdb');
 
 
@@ -60,6 +66,11 @@ Route::post('/reset-password', [ResetPassword::class, 'send'])->middleware('gues
 Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');
 Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard')->middleware('auth');
+=======
+Route::get('/ppdb', [PageController::class, 'ppdb'])->name('ppdb');
+Route::get('/berita', [PageController::class, 'berita'])->name('berita');
+Route::get('/singleBerita', [PageController::class, 'singleBerita'])->name('singleBerita');
+>>>>>>> arya
 
 
 
@@ -82,5 +93,21 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/profile-static', [AdminPageController::class, 'profile'])->name('profile-static');
 	Route::get('/sign-in-static', [AdminPageController::class, 'signin'])->name('sign-in-static');
 	Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static'); 
+	Route::post('logout', [LoginController::class, 'logout'])->name('logout'); 
+
+	Route::get('/kategori-postingan', [KategoriPostinganContoller::class, 'kategoriPostingan'])->name('kategori-postingan'); 
+	Route::post('/kategori-postingan', [KategoriPostinganContoller::class, 'store'])->name('kategori-store');
+	Route::delete('/kategori-postingan/{id}/delete', [KategoriPostinganContoller::class, 'destroy'])->name('kategori-destroy');
+
+	Route::get('/create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
+	Route::post('/create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
+	Route::put('/create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
+	Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
+	Route::delete('/create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
+
 	Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> arya

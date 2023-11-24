@@ -18,7 +18,12 @@
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
     <!-- CSS Files -->
+<<<<<<< HEAD
     <link id="pagestyle" href="{{ asset('assets/css/argon-dashboard.css') }}" rel="stylesheet" />
+=======
+    <link id="pagestyle" href="assets/css/argon-dashboard.css" rel="stylesheet" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
+>>>>>>> arya
 </head>
 
 <body class="{{ $class ?? '' }}">
@@ -50,6 +55,15 @@
             @include('components.fixed-plugin')
         @endif
     @endauth
+
+    {{-- JS TinyMCE --}}
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>    
 
     <!--   Core JS Files   -->
     <script src="assets/js/core/popper.min.js"></script>
