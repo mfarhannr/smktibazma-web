@@ -30,7 +30,10 @@
                                     {{-- <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Judul
                                     </th> --}}
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                        id
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         Gambar
                                     </th>
                                     <th
@@ -42,6 +45,9 @@
                                 </tr>
                             </thead>
                             <tbody>
+                                @php
+                                $i = 1;
+                                 @endphp
                                 @forelse ($ppdb as $item)
                                     <tr>
                                         {{-- <td>
@@ -49,6 +55,9 @@
 
                                         </td> --}}
                                         <td>
+                                            <p class="text-sm text-center font-weight-bold mb-0">{{ $i }}</p>
+                                        </td>
+                                        <td class="align-middle text-center text-sm">
                                             <div>
                                                 <img src="{{ asset('img/' . $item->gambar) }}"
                                                     class="border-radius-lg shadow-sm height-100 w-auto" alt="">
@@ -77,6 +86,9 @@
                                             </div>
                                         </td>
                                     </tr>
+                                    @php
+                                    $i++;
+                                @endphp
                                 @empty
 
                                 @endforelse

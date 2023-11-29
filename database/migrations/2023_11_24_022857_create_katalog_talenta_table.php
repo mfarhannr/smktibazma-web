@@ -16,6 +16,11 @@ return new class extends Migration
             $table->string('gambar');
             $table->string('name');
             $table->string('bidang');
+            $table->string('instagram');
+            $table->string('linkedin');
+            $table->string('github');
+            $table->integer('nomor');
+            $table->text('deskripsi');
             $table->timestamps();
         });
     }
