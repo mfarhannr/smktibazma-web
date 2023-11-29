@@ -5,7 +5,7 @@
 <!-- Hero -->
 <header class="bg-gradient-dark">
     <div class="page-header min-vh-75" style="
-            background-image: url('./template/assets/img/examples/asrama.jpg');
+            background-image: url('{{asset('./template/assets/img/examples/asrama.jpg')}}');
           ">
         <span class="mask bg-gradient-dark opacity-6"></span>
         <div class="container">
@@ -34,7 +34,7 @@
                         <div class="align-items-center my-5">
                             <img src="{{asset('img/' . $allPostingan->image)}}" alt="img-blur-shadow" class="img-fluid border-radius-lg" loading="lazy" />
                         </div>
-                        <p>
+                        <p class="text-justify">
                             {!! $allPostingan->deskripsi !!}
                         </p>
                     </div>

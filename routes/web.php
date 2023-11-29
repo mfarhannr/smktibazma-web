@@ -27,7 +27,6 @@ use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
 use App\Http\Controllers\KategoriPostinganContoller;
 use App\Http\Controllers\PostinganController;
-use App\Http\Controllers\UserManagementController;
 
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
@@ -55,7 +54,6 @@ Route::get('/dashboard', function () {return redirect('/dashboard');})->middlewa
 	Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard')->middleware('auth');
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::get('/user-management/create', [UserManagementController::class, 'index'])->name('index');
 	Route::get('/virtual-reality', [AdminPageController::class, 'vr'])->name('virtual-reality');
 	Route::get('/rtl', [AdminPageController::class, 'rtl'])->name('rtl');
 	Route::get('/profile', [UserProfileController::class, 'show'])->name('profile');
