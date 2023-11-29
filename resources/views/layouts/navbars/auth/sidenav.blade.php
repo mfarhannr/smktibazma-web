@@ -12,15 +12,38 @@
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link {{ Route::currentRouteName() == 'dashboard' ? 'active' : '' }}" href="{{ route('dashboard') }}">
-                <div
-                    class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                    <i class="ni ni-shop text-dark text-sm opacity-10"></i>
-                </div>
-                <span class="nav-link-text ms-1">Dashboard</span>
-            </a>
+                <a class="nav-link {{ Route::currentRouteName() == 'dashboard' ? 'active' : '' }}"
+                    href="{{ route('dashboard') }}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-shop text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Dashboard</span>
+                </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{ str_contains(request()->url(), 'admin-management') == true ? 'active' : '' }}"
+                    href=
+                    "{{ route('page', ['page' => 'admin-management']) }}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-ungroup text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Admin Management</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ str_contains(request()->url(), 'portfolio') == true ? 'active' : '' }}"
+                    href=
+                    "{{ route('page', ['page' => 'portfolio']) }}">
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-ungroup text-dark text-sm opacity-10"></i>
+                    </div>
+                    <span class="nav-link-text ms-1">Portfolio</span>
+                </a>
+            </li>
             {{-- <li class="nav-item mt-3 d-flex align-items-center">
                 <div class="ps-4">
                     <i class="fab fa-laravel" style="color: #0057B8;"></i>
@@ -117,7 +140,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'billing') == true ? 'active' : '' }}"
+                <a class="nav-link {{ str_contains(request()->url(), 'katalogtalenta') == true ? 'active' : '' }}"
                     href=
                     "{{ route('page', ['page' => 'billing']) }}"
                     >
@@ -141,10 +164,8 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() == 'rtl' ? 'active' : '' }}"
-                    href=#
-                    {{-- "{{ route('rtl') }}" --}}
-                    >
+                <a class="nav-link {{ Route::currentRouteName() == 'rtl' ? 'active' : '' }}" href=#
+                    {{-- "{{ route('rtl') }}" --}}>
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-world-2 text-dark text-sm opacity-10"></i>
