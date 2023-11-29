@@ -8,6 +8,5 @@ class KatalogTalenta extends Model
 {
     use HasFactory;
     protected $table = "katalog_talenta";
-
-    protected $fillable = ['gambar', 'name', 'bidang' ];
+    protected $fillable = ['gambar', 'name', 'bidang','instagram', 'linkedin', 'github', 'nomor', 'deskripsi' ];
 }

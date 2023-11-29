@@ -34,6 +34,11 @@ class KatalogTalentaController extends Controller
             'gambar' => 'required|image|mimes:jpg,jpeg,png',
             'name' => 'required',
             'bidang' => 'required',
+            'instagram' => 'required',
+            'linkedin' => 'required',
+            'github' => 'required',
+            'nomor' => 'required',
+            'deskripsi' => 'required'
         ]);
 
         $fileName = time() . '.' . $request->gambar->extension();
@@ -44,6 +49,12 @@ class KatalogTalentaController extends Controller
         $KatalogTalenta->name = $request->name;
         $KatalogTalenta->gambar = $fileName;
         $KatalogTalenta->bidang = $request->bidang;
+        $KatalogTalenta->instagram = $request->instagram;
+        $KatalogTalenta->linkedin = $request->linkedin;
+        $KatalogTalenta->github = $request->github;
+        $KatalogTalenta->nomor = $request->nomor;
+        $KatalogTalenta->deskripsi = $request->deskripsi;
+
 
         $KatalogTalenta->save();
 
@@ -53,29 +64,35 @@ class KatalogTalentaController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $KatalogTalenta = KatalogTalenta::find($id);
+        return view('pages.singleTalent')->with(['KatalogTalenta' => $KatalogTalenta]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
         $KatalogTalenta = KatalogTalenta::find($id);
-        return view('admin-pages.talenta.update', compact('KatalogTalenta'));
+        return view('admin-pages.talenta.update')->with(['KatalogTalenta' => $KatalogTalenta]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update($id, Request $request)
     {
         $request->validate([
             'gambar' => 'required|image|mimes:jpg,jpeg,png',
             'name' => 'required',
             'bidang' => 'required',
+            'instagram' => 'required',
+            'linkedin' => 'required',
+            'github' => 'required',
+            'nomor' => 'required',
+            'deskripsi' => 'required',
         ]);
 
 
@@ -95,6 +112,12 @@ class KatalogTalentaController extends Controller
         }
         $KatalogTalenta->name = $request->name;
         $KatalogTalenta->bidang = $request->bidang;
+        $KatalogTalenta->instagram = $request->instagram;
+        $KatalogTalenta->linkedin = $request->linkedin;
+        $KatalogTalenta->github = $request->github;
+        $KatalogTalenta->nomor = $request->nomor;
+        $KatalogTalenta->deskripsi = $request->deskripsi;
+
         // $KatalogTalenta->judul = $request['judul'];
         // $KatalogTalenta->deskripsi = $request['deskripsi'];
         $KatalogTalenta->save();

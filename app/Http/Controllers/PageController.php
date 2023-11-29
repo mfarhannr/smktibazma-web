@@ -45,11 +45,8 @@ class PageController extends Controller
     }
     public function talent()
     {
-        $allTalent = talent::orderBy('id','asc')->paginate(4);
-        return view("pages.talent")->with('allTalent', $allTalent);
-
-        $katalogtalenta = katalogtalenta::get();
-        return view("pages.katalogtalenta")->with('katalogtalenta', $katalogtalenta);
+        $KatalogTalenta = KatalogTalenta::orderBy('id','asc')->paginate(4);
+        return view("pages.talent")->with(['KatalogTalenta' => $KatalogTalenta]);
     }
 
     public function team()

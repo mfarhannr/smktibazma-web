@@ -24,6 +24,7 @@
                                             <input class="form-control" type="text" name="deskripsi"
                                                 onfocus="focused(this)" onfocusout="defocused(this)">
                                         </div>
+                                    </div>
                                         {{-- <div class="col-12 col-sm-6">
                                             <label>Username</label>
                                             <input class="multisteps-form__input form-control" type="text" name="name"

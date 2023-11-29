@@ -13,6 +13,7 @@
     <!-- Nucleo Icons -->
     <link href="./template/assets/css/nucleo-icons.css" rel="stylesheet" />
     <link href="./template/assets/css/nucleo-svg.css" rel="stylesheet" />
+
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8cf86726f0.js" crossorigin="anonymous"></script>

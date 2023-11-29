@@ -11,24 +11,79 @@
                         {{-- <p class="mb-0 text-sm">Mandatory informations</p> --}}
                         <div class="row">
                             <div class="col-md-12 mt-2">
-                                <form action="{{ route('katalogtalenta.store')}}" method="POST" enctype="multipart/form-data">
+                                <form action="{{ route('katalogtalenta.store') }}" method="POST"
+                                    enctype="multipart/form-data">
                                     @csrf
-                                    <div class="row mt-3">
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="form-control-label">Gambar</label>
-                                            <input class="form-control" type="file" name="gambar"
-                                                onfocus="focused(this)" onfocusout="defocused(this)">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Nama</label>
+                                                    <input class="form-control" type="text" name="name"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label">Bidang</label>
+                                                    <input class="form-control" type="text" name="bidang"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="form-control-label">Nama</label>
-                                            <input class="form-control" type="text" name="name"
-                                                onfocus="focused(this)" onfocusout="defocused(this)">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label">Instagram</label>
+                                                    <input class="form-control" type="text" name="instagram"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label">linkedin</label>
+                                                    <input class="form-control" type="text" name="linkedin"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label">Github</label>
+                                                    <input class="form-control" type="text" name="github"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">No Hp</label>
+                                                    <input class="form-control" type="number" name="nomor"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="example-text-input" class="form-control-label">Bidang</label>
-                                            <input class="form-control" type="text" name="bidang"
-                                                onfocus="focused(this)" onfocusout="defocused(this)">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="example-text-input"
+                                                        class="form-control-label">Gambar</label>
+                                                    <input class="form-control" type="file" name="gambar"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">Deskripsi</label>
+                                                    <textarea class="form-control" id="editor" type="text" name="deskripsi"
+                                                        onfocus="focused(this)     onfocusout="defocused(this)"></textarea>
+                                                </div>
+                                            </div>
                                         </div>
+                                    </div>
+
                                         {{-- <div class="col-12 col-sm-6">
                                             <label>Username</label>
                                             <input class="multisteps-form__input form-control" type="text" name="name"
@@ -66,13 +121,13 @@
                                                 placeholder="******" onfocus="focused(this)" onfocusout="defocused(this)">
                                         </div>
                                     </div> --}}
-                                    {{-- <div class="form-group">
+                                        {{-- <div class="form-group">
                                         <label for="example-text-input" class="form-control-label">Username</label>
                                         <input class="form-control" type="text" name="name" onfocus="focused(this)"
                                             onfocusout="defocused(this)">
                                     </div> --}}
 
-                                    <button type="submit" class="btn btn-dark btn-sm ms-auto mt-4hh">Create</button>
+                                        <button type="submit" class="btn btn-dark btn-sm ms-auto mt-4hh">Create</button>
                                 </form>
                             </div>
                         </div>
