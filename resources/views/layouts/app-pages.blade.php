@@ -24,7 +24,7 @@
         href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.0.0/uicons-brands/css/uicons-brands.css" />
     <!-- CSS Files -->
-    <link id="pagestyle" href="./template/assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+    <link id="pagestyle" href="{{asset('./template/assets/css/material-kit.css?v=3.0.4')}}" rel="stylesheet" />
 
     <!-- Nepcha Analytics (nepcha.com) -->
     <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
