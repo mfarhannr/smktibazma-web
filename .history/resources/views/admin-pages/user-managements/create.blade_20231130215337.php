@@ -10,7 +10,7 @@
                         <h5 class="font-weight-bolder mb-0">Add Admin</h5>
                         <div class="row">
                             <div class="col-md-12 mt-2">
-                                <form action="/admin-management" method="POST" enctype="multipart/form-data">
+                                <form action="/admin" method="POST" enctype="multipart/form-data">
                                     @csrf
                                     <div class="row mt-3">
 
