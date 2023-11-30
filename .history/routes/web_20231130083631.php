@@ -68,7 +68,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::resource('portfolio', PortfolioController::class);
 	Route::resource('kegiatan', KegiatanController::class);
-	Route::resource('admin/prestasi', PrestasiController::class);
+	Route::resource('adminprestasi', PrestasiController::class);
 
 	Route::get('/virtual-reality', [AdminPageController::class, 'vr'])->name('virtual-reality');
 	Route::get('/rtl', [AdminPageController::class, 'rtl'])->name('rtl');

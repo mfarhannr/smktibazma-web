@@ -4,7 +4,7 @@
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
             aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href="{{ route('dashboard') }}" >
-            <img src="{{ asset ('./img/logo-ct.png')}}" class="navbar-img h-100" alt="logo-ct">
+            <img src="./img/logo-ct.png" class="navbar-img h-100" alt="logo-ct">
             <span class="ms-1 font-weight-bold">Bazma Web</span>
         </a>
     </div>
@@ -33,27 +33,26 @@
                     <span class="nav-link-text ms-1">Admin Management</span>
                 </a>
             </li>
-            
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'kegiatan') == true ? 'active' : '' }}"
+                <a class="nav-link {{ str_contains(request()->url(), 'portfolio') == true ? 'active' : '' }}"
                     href=
-                    "{{ route('page', ['page' => 'kegiatan']) }}">
+                    "{{ route('page', ['page' => 'portfolio']) }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-ungroup text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Kegiatan</span>
+                    <span class="nav-link-text ms-1">Portfolio</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'admin/prestasi') == true ? 'active' : '' }}"
+                <a class="nav-link {{ str_contains(request()->url(), 'portfolio') == true ? 'active' : '' }}"
                     href=
-                    "{{ route('page', ['page' => 'admin/prestasi']) }}">
+                    "{{ route('page', ['page' => 'portfolio']) }}">
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-ungroup text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Prestasi</span>
+                    <span class="nav-link-text ms-1">Portfolio</span>
                 </a>
             </li>
             {{-- <li class="nav-item mt-3 d-flex align-items-center">

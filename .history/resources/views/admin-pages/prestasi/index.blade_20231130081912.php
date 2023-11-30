@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('layouts.navbars.auth.topnav', ['title' => 'Portfolio'])
+    @include('layouts.navbars.auth.topnav', ['title' => 'Prestasi'])
     <div class="row mt-4 mx-4">
         <div class="col-12">
             {{-- <div class="alert alert-light" role="alert">
@@ -18,8 +18,8 @@
                 </div> --}}
 
                 <div class="card-header pc-0 d-flex mb-0 justify-content-between">
-                    <h5 class=" ps-8 mb-0 text-center">Portfolio</h5>
-                    <a href="{{ route('portfolio.create') }}" class=" me-7 text-center mb-0 btn bg-gradient-dark btn-sm">Add Portfolio</a>
+                    <h5 class=" ps-8 mb-0 text-center">Prestasi</h5>
+                    <a href="{{ route('prestasi.create') }}" class=" me-7 text-center mb-0 btn bg-gradient-dark btn-sm">Add Prestasi</a>
                 </div>
 
                 <div class="card-body px-0 pt-0 pb-2">
@@ -44,7 +44,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @forelse ($portfolios as $item)
+                                @forelse ($prestasi as $item)
                                     <tr>
                                         <td>
                                             <h6 class="text-center mb-0 mx-3 text-sm">{{ $item->judul }}</h6>
@@ -61,7 +61,7 @@
                                         </td>
                                         <td class="align-middle text-center">
                                             <div class="d-flex justify-content-center align-items-center">
-                                                <form action="/portfolio/{{ $item->id }}/edit" method="PUT"
+                                                <form action="/Prestasi/{{ $item->id }}/edit" method="PUT"
                                                     class="text-center mx-2">
                                                     @csrf
                                                     <button class="btn btn-xs btn-secondary mb-0 font-weight-bold text-xs">
@@ -70,7 +70,7 @@
                                                         <span class="btn-inner--text"> Edit</span>
                                                     </button>
                                                 </form>
-                                                <form action="/portfolio/{{ $item->id }}" method="POST">
+                                                <form action="/Prestasi/{{ $item->id }}" method="POST">
                                                     @csrf
                                                     @method('delete')
                                                     <button class="btn btn-xs btn-danger mb-0 font-weight-bold text-xs">

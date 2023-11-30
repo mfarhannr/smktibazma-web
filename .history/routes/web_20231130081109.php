@@ -23,9 +23,7 @@ use App\Http\Controllers\ChangePassword;
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
-use App\Http\Controllers\KegiatanController;
-use App\Http\Controllers\PrestasiController;
-
+use App\Http\Controllers\PortfolioController;
 
 
 
@@ -67,8 +65,7 @@ Route::group(['middleware' => 'auth'], function () {
 	// Route::post('/portfolio', [PortfolioController::class, 'store'])->name('portfolio.perform');
 
 	Route::resource('portfolio', PortfolioController::class);
-	Route::resource('kegiatan', KegiatanController::class);
-	Route::resource('admin/prestasi', PrestasiController::class);
+	Route::resource('portfolio', KegiatanController::class);
 
 	Route::get('/virtual-reality', [AdminPageController::class, 'vr'])->name('virtual-reality');
 	Route::get('/rtl', [AdminPageController::class, 'rtl'])->name('rtl');
