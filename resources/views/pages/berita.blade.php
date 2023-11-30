@@ -4,7 +4,7 @@
 
 <!-- Hero -->
 <header class="bg-gradient-dark">
-    <div class="page-header min-vh-75" style="
+    <div class="page-header min-vh-50" style="
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
         <span class="mask bg-gradient-dark opacity-6"></span>
@@ -73,8 +73,9 @@
                                                                 <a class="d-block blur-shadow-image">
                                                                     <img src="{{asset('img/' . $item->image)}}"
                                                                         alt="img-blur-shadow"
-                                                                        class="img-fluid border-radius-lg"
-                                                                        loading="lazy" />
+                                                                        class="img-fluid border-radius-lg shadow-sm"
+                                                                        loading="lazy"
+                                                                        style="width: 300px; height: 200px;" />
                                                                 </a>
                                                             </div>
                                                             <div class="card-body pt-3">

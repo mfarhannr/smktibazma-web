@@ -96,13 +96,13 @@
                                         <p class="ps-3 text-xs font-weight-bold mb-0">{{ $i }}.</p>
                                     </td>
                                     <td class="align-middle text-center text-sm">
-                                        <img src="{{asset('img/' . $item->image)}}" alt="image" class="avatar me-3">
+                                        <img src="{{asset('img/' . $item->image)}}" alt="image" class="height-100 w-auto border-radius-lg shadow-sm me-3">
                                     </td>
                                     <td class="align-middle text-center text-sm">
                                         <span class="text-secondary text-xs font-weight-bold">{{ $item->name }}</span>
                                     </td>
                                     <td class="align-middle text-center text-sm">
-                                        <span class="text-secondary text-xs font-weight-bold">{{ $item->kategori_postingan_id }}</span>
+                                        <span class="text-secondary text-xs font-weight-bold">{{ $item->kategori_postingan->name }}</span>
                                     </td>
                                     <td class="align-middle text-center">
                                         <span class="text-secondary text-xs font-weight-bold">{{ $item->updated_at}}</span>

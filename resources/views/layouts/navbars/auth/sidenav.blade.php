@@ -22,6 +22,7 @@
                 </a>
             </li>
 
+<<<<<<< HEAD
             <li class="nav-item">
                 <a class="nav-link {{ str_contains(request()->url(), 'user-management') == true ? 'active' : '' }}"
                     href=
@@ -44,6 +45,8 @@
                     <span class="nav-link-text ms-1">Portfolio</span>
                 </a>
             </li>
+=======
+>>>>>>> 27e5c9c169d6b6ad6b87fb35cc7e2d713fbca9cb
             {{-- <li class="nav-item mt-3 d-flex align-items-center">
                 <div class="ps-4">
                     <i class="fab fa-laravel" style="color: #0057B8;"></i>

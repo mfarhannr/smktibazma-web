@@ -25,17 +25,16 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
-<<<<<<< HEAD
 // use App\Http\Controllers\PPDB;
-=======
 use App\Http\Controllers\KategoriPostinganContoller;
 use App\Http\Controllers\PostinganController;
->>>>>>> arya
 use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\PPDBController;
 use App\Http\Controllers\KatalogTalentaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
+
+// 27e5c9c169d6b6ad6b87fb35cc7e2d713fbca9cb
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');
@@ -45,7 +44,6 @@ Route::get('/talent', [PageController::class, 'talent'])->name('talent');
 Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/donasi', [PageController::class, 'donasi'])->name('donasi');
 Route::get('/mitra', [PageController::class, 'mitra'])->name('mitra');
-<<<<<<< HEAD
 Route::get('/ppdbs', [PageController::class, 'ppdb'])->name('ppdb');
 
 
@@ -62,7 +60,6 @@ Route::get('/dashboard', function () {return redirect('/dashboard');})->middlewa
 
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::get('/user-management/create', [UserManagementController::class, 'index'])->name('index');
 	Route::get('/virtual-reality', [AdminPageController::class, 'vr'])->name('virtual-reality');
 	Route::get('/rtl', [AdminPageController::class, 'rtl'])->name('rtl');
 	Route::get('/profile', [UserProfileController::class, 'show'])->name('profile');
@@ -89,6 +86,3 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('ppdb', PPDBController::class);
 	Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
 });
-=======
-});
->>>>>>> arya
