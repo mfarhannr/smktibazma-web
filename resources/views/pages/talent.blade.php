@@ -18,6 +18,7 @@
           </div>
         </div>
       </header>
+      
       <!-- End Hero -->
     <div class="card card-body  mx-3 mx-md-4 mt-n6 mb-4">
         {{-- <section>
@@ -84,6 +85,9 @@
                 </div>
             </div>
         </section>
+        <!-- -------- START HEADER 7 w/ card over right bg image ------- -->
+
+  <!-- -------- END HEADER 8 w/ card over right bg image ------- -->
 
         <div class="container talent ">
             <div class="row">

@@ -8,11 +8,11 @@
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
         <span class="mask bg-gradient-dark opacity-6"></span>
-        <div class="container">
+        <div class="container px-3">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mx-auto my-auto">
-               <h1 class="text-white phenomena-bold" style="font-size: 65px">
-                GALERI
+               <h1 class="text-white phenomena-bold">
+                Galeri
               </h1>
             </div>
           </div>
@@ -23,7 +23,7 @@
 
     <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row">
             <div class="container mx-auto">
               <div class="nav-wrapper position-relative end-0">
@@ -71,7 +71,7 @@
         </div>
       </section>
       <section class="py-3">
-        <div class="container">
+        <div class="container px-3">
           <div class="me-auto my-auto text-start text-justify">
             <div class="tab-content" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="futsal" role="tabpanel" aria-labelledby="futsal-tab">

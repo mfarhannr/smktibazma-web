@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mx-auto my-auto">
-              <h1 class="text-white phenomena-bold" style="font-size: 90px">
+              <h1 class="text-white phenomena-bold">
                 PENGEMBANG
               </h1>
             </div>
@@ -23,10 +23,10 @@
 
     <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row">
             <div class="col-md-8 mx-auto text-center mb-5">
-              <h3>The Executive Team</h3>
+              <h2>The Executive Team</h2>
               <p class="font-weight-normal">This is the paragraph where you can write more details about your team. Keep
                 you user engaged by providing meaningful information.</p>
             </div>

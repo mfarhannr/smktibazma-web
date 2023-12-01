@@ -34,6 +34,7 @@ class LoginController extends Controller
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
+            'password' => 'The provided credentials do not match our records.',
         ]);
     }
 
@@ -44,6 +45,6 @@ class LoginController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/');
     }
 }

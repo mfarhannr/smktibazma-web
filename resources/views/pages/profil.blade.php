@@ -8,11 +8,11 @@
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
         <span class="mask bg-gradient-dark opacity-6"></span>
-        <div class="container">
+        <div class="container px-3">
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mx-auto my-auto">
-              <h1 class="text-white phenomena-bold" style="font-size: 65px">
-                TENTANG SMK TI BAZMA
+              <h1 class="text-white phenomena-bold">
+                Tentang SMK TI Bazma
               </h1>
             </div>
           </div>
@@ -24,13 +24,13 @@
     <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
       <!-- Content-1 -->
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row align-items-center">
             <div class="col-lg">
               <div class="col-md">
-                <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
+                <h2 class="mb-5 phenomena-bold" >
                   <span class="text-success">• </span>Profil Sekolah
-                </h3>
+                </h2>
                 <div class="mt-4 text-justify">
                   <p>
                     <span style="font-weight: bold">Sekolah Menengah Kejuruan Teknologi Informasi Bazma
@@ -59,13 +59,13 @@
 
       <!-- Content-2 -->
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row align-items-center">
             <div class="col-lg">
               <div class="col-md">
-                <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
+                <h2 class="mb-5 phenomena-bold" >
                   <span class="text-success">• </span>Visi dan Misi
-                </h3>
+                </h2>
                 <div class="row mt-5">
                   <div class="col-lg-6 my-auto">
                     <div class="cursor-pointer">
@@ -73,7 +73,7 @@
                         <div class="full-background" style="background-image: url(./template/assets/img/examples/asrama.jpg)" loading="lazy">
                         </div>
                         <div class="card-body py-7 text-center">
-                          <h3 class="text-white mb-0 phenomena-bold">VISI</h3>
+                          <h2 class="text-white mb-0 phenomena-bold">VISI</h2>
                         </div>
                       </div>
                     </div>
@@ -115,7 +115,7 @@
                         <div class="full-background" style="background-image: url('./template/assets/img/examples/masjid.jpg')" loading="lazy">
                         </div>
                         <div class="card-body py-7 text-center">
-                          <h3 class="text-white mb-0 phenomena-bold">MISI</h3>
+                          <h2 class="text-white mb-0 phenomena-bold">MISI</h2>
                         </div>
                       </div>
                     </div>
@@ -130,13 +130,13 @@
 
       <!-- Content-3 -->
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row align-items-center">
             <div class="col-lg">
               <div class="col-md">
-                <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
+                <h2 class="mb-5 phenomena-bold" >
                   <span class="text-success">• </span>Makna Logo dan Warna
-                </h3>
+                </h2>
                 <section>
                   <div class="row justify-space-between py-3">
                     <div class="col-lg-3">
@@ -262,15 +262,15 @@
 
       <!-- Content-4 -->
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row align-items-center">
             <div class="col-lg">
               <div class="col-md">
-                <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
+                <h2 class="mb-5 phenomena-bold" >
                   <span class="text-success">• </span>Fasilitas Sekolah
-                </h3>
+                </h2>
                 <section class="pb-0">
-                  <div class="container">
+                  <div class="container px-3">
                     <div class="row">
                       <div class="col-lg-3 col-md-6">
                         <div class="card mt-5 mt-md-0">
@@ -357,13 +357,13 @@
 
       <!-- Content-5 -->
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row align-items-center">
             <div class="col-lg">
               <div class="col-md">
-                <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
+                <h2 class="mb-5 phenomena-bold" >
                   <span class="text-success">• </span>Fasilitas Asrama
-                </h3>
+                </h2>
                 <div style="text-align: justify" class="mt-4">
                   <p>
                     SMK TI Bazma merupakan sekolah berbasis asrama dengan
@@ -486,13 +486,13 @@
 
       <!-- Content-6 -->
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row align-items-center">
             <div class="col-lg">
               <div class="col-md">
-                <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
+                <h2 class="mb-5 phenomena-bold" >
                   <span class="text-success">• </span>Program Asrama
-                </h3>
+                </h2>
                 <div style="text-align: justify" class="mt-4">
                   <ul>
                     <li>
@@ -521,16 +521,16 @@
 
       <!-- Content-7 -->
       <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
           <div class="row">
             <div class="mx-auto">
-              <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
+              <h2 class="mb-5 phenomena-bold" >
                 <span class="text-success">• </span>Kompetensi Keahlian
-              </h3>
+              </h2>
               <div class="card">
                 <div class="accordion p-3 text-justify" id="accordionPricing">
                   <div class="accordion-item mb-3">
-                    <h3 class="accordion-header phenomena-bold" id="headingOne">
+                    <h2 class="accordion-header phenomena-bold" id="headingOne">
                       <button class="accordion-button border-bottom font-weight-bold text-start collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                         aria-controls="collapseOne">
@@ -540,7 +540,7 @@
                         <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
                           aria-hidden="true"></i>
                       </button>
-                    </h3>
+                    </h2>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                       data-bs-parent="#accordionPricing">
                       <div class="accordion-body opacity-8">
@@ -555,7 +555,7 @@
                     </div>
                   </div>
                   <div class="accordion-item mb-3">
-                    <h3 class="accordion-header phenomena-bold" id="headingTwo">
+                    <h2 class="accordion-header phenomena-bold" id="headingTwo">
                       <button class="accordion-button border-bottom font-weight-bold text-start collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                         aria-controls="collapseTwo">
@@ -565,7 +565,7 @@
                         <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
                           aria-hidden="true"></i>
                       </button>
-                    </h3>
+                    </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                       data-bs-parent="#accordionPricing">
                       <div class="accordion-body opacity-8">
@@ -577,7 +577,7 @@
                     </div>
                   </div>
                   <div class="accordion-item mb-3">
-                    <h3 class="accordion-header phenomena-bold" id="headingThree">
+                    <h2 class="accordion-header phenomena-bold" id="headingThree">
                       <button class="accordion-button border-bottom font-weight-bold text-start collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                         aria-controls="collapseThree">
@@ -587,7 +587,7 @@
                         <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0"
                           aria-hidden="true"></i>
                       </button>
-                    </h3>
+                    </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                       data-bs-parent="#accordionPricing">
                       <div class="accordion-body opacity-8">

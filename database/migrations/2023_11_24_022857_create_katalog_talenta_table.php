@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('github');
             $table->integer('nomor');
             $table->text('deskripsi');
+            $table->string('email');
             $table->timestamps();
         });
     }

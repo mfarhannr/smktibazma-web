@@ -8,11 +8,11 @@
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
                 <span class="mask bg-gradient-dark opacity-6"></span>
-                <div class="container">
+                <div class="container px-3">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center mx-auto my-auto">
                             <h1 class="text-white phenomena-bold">
-                                MITRA
+                                Kemitraan & Hubungan industri
                             </h1>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
         <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
             <!-- Content-1 -->
             <section class="py-5">
-                <div class="container">
+                <div class="container px-3">
                     <div class="row align-items-center">
                         <div class="col-lg">
                             <div class="col-md">
@@ -63,7 +63,7 @@
 
             <!-- Content-2 -->
             <section class="py-5">
-                <div class="container">
+                <div class="container px-3">
                     <div class="row">
                         <div class="col-lg-3 col-md-6">
                             <div class="card mt-5 mt-md-0">

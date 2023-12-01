@@ -24,30 +24,16 @@
                                         @csrf
                                         @method('post')
                                         <div class="flex flex-col mb-3">
-                                            <input type="username" name="username" class="form-control form-control-lg"
-                                                aria-label="Username" >
-                                            @error('username')
-                                                <p class="text-danger text-xs pt-1"> {{ $message }} </p>
-                                            @enderror
-                                        </div>
-                                        <div class="flex flex-col mb-3">
                                             <input type="email" name="email" class="form-control form-control-lg"
-                                                value="{{ old('email') ?? 'admin@argon.com' }}" aria-label="Email">
+                                                value="{{ old('email') }}" aria-label="Email">
                                             @error('email')
                                                 <p class="text-danger text-xs pt-1"> {{ $message }} </p>
                                             @enderror
                                         </div>
                                         <div class="flex flex-col mb-3">
                                             <input type="password" name="password" class="form-control form-control-lg"
-                                                aria-label="Password" value="secret">
+                                                aria-label="Password" value="{{ old('password') }}">
                                             @error('password')
-                                                <p class="text-danger text-xs pt-1"> {{ $message }} </p>
-                                            @enderror
-                                        </div>
-                                        <div class="flex flex-col mb-3">
-                                            <input type="role" name="role" class="form-control form-control-lg"
-                                                aria-label="Role" >
-                                            @error('role')
                                                 <p class="text-danger text-xs pt-1"> {{ $message }} </p>
                                             @enderror
                                         </div>

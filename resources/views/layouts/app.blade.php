@@ -4,8 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="/img/logos/logo-ct-dark.png">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset ('./template/assets/img/apple-icon.png')}}" />
+    <link rel="icon" type="image/png" href="{{ asset ('./template/assets/img/favicon.png')}}" />
+
+    {{-- <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('/img/apple-icon.png') }}"> --}}
+    <link rel="icon" type="image/png" href="{{ asset('./img/logos/logo-ct-dark.png') }}">
     <title>
         Bazma-Web
     </title>
@@ -13,13 +17,19 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Nucleo Icons -->
     <link href="{{ asset('./assets/css/nucleo-icons.css') }}" rel="stylesheet" />
-    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="{{ asset('./assets/css/nucleo-svg.css') }}" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/8cf86726f0.js" crossorigin="anonymous"></script>
+
+    <link href="{{ asset('assets/css/nucleo-svg.css') }}" rel="stylesheet" />
     <!-- CSS Files -->
+<<<<<<<<< Temporary merge branch 1
+    <link id="pagestyle" href="{{ asset('assets/css/argon-dashboard.css') }}" rel="stylesheet" />
+=========
     <link id="pagestyle" href="{{asset('assets/css/argon-dashboard.css')}}" rel="stylesheet" />
     <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
+>>>>>>>>> Temporary merge branch 2
 </head>
 
 <body class="{{ $class ?? '' }}">

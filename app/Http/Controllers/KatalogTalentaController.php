@@ -38,7 +38,9 @@ class KatalogTalentaController extends Controller
             'linkedin' => 'required',
             'github' => 'required',
             'nomor' => 'required',
-            'deskripsi' => 'required'
+            'deskripsi' => 'required',
+            'email' => 'required',
+
         ]);
 
         $fileName = time() . '.' . $request->gambar->extension();
@@ -54,6 +56,8 @@ class KatalogTalentaController extends Controller
         $KatalogTalenta->github = $request->github;
         $KatalogTalenta->nomor = $request->nomor;
         $KatalogTalenta->deskripsi = $request->deskripsi;
+        $KatalogTalenta->email = $request->email;
+
 
 
         $KatalogTalenta->save();
@@ -93,6 +97,7 @@ class KatalogTalentaController extends Controller
             'github' => 'required',
             'nomor' => 'required',
             'deskripsi' => 'required',
+            'email' => 'required',
         ]);
 
 
@@ -117,6 +122,8 @@ class KatalogTalentaController extends Controller
         $KatalogTalenta->github = $request->github;
         $KatalogTalenta->nomor = $request->nomor;
         $KatalogTalenta->deskripsi = $request->deskripsi;
+        $KatalogTalenta->email = $request->email;
+
 
         // $KatalogTalenta->judul = $request['judul'];
         // $KatalogTalenta->deskripsi = $request['deskripsi'];

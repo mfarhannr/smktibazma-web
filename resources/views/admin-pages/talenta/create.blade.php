@@ -15,18 +15,25 @@
                                     enctype="multipart/form-data">
                                     @csrf
                                         <div class="row">
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input" class="form-control-label">Nama</label>
                                                     <input class="form-control" type="text" name="name"
                                                         onfocus="focused(this)" onfocusout="defocused(this)">
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6">
+                                            <div class="col-lg-4">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
                                                         class="form-control-label">Bidang</label>
                                                     <input class="form-control" type="text" name="bidang"
+                                                        onfocus="focused(this)" onfocusout="defocused(this)">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="example-text-input" class="form-control-label">No Hp</label>
+                                                    <input class="form-control" type="number" name="nomor"
                                                         onfocus="focused(this)" onfocusout="defocused(this)">
                                                 </div>
                                             </div>
@@ -51,15 +58,16 @@
                                             <div class="col-lg-3">
                                                 <div class="form-group">
                                                     <label for="example-text-input"
-                                                        class="form-control-label">Github</label>
-                                                    <input class="form-control" type="text" name="github"
+                                                        class="form-control-label">Gmail</label>
+                                                    <input class="form-control" type="text" name="email"
                                                         onfocus="focused(this)" onfocusout="defocused(this)">
                                                 </div>
                                             </div>
                                             <div class="col-lg-3">
                                                 <div class="form-group">
-                                                    <label for="example-text-input" class="form-control-label">No Hp</label>
-                                                    <input class="form-control" type="number" name="nomor"
+                                                    <label for="example-text-input"
+                                                        class="form-control-label">Github</label>
+                                                    <input class="form-control" type="text" name="github"
                                                         onfocus="focused(this)" onfocusout="defocused(this)">
                                                 </div>
                                             </div>

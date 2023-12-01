@@ -1,52 +1,94 @@
-<aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
-    id="sidenav-main">
-    <div class="sidenav-header">
-        <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
-            aria-hidden="true" id="iconSidenav"></i>
-        <a class="navbar-brand m-0" href="{{ route('dashboard') }}" >
-            <img src="./img/logo-ct.png" class="navbar-img h-100" alt="logo-ct">
-            <span class="ms-1 font-weight-bold">Bazma Web</span>
-        </a>
-    </div>
-    <hr class="horizontal dark mt-0">
-    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link {{ Route::currentRouteName() == 'dashboard' ? 'active' : '' }}"
-                    href="{{ route('dashboard') }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-shop text-dark text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Dashboard</span>
-                </a>
-            </li>
+    <aside
+        class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 "
+        id="sidenav-main">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="{{ route('dashboard') }}">
+                <img src="{{ asset('./img/logo-ct.png') }}" class="navbar-img h-100" alt="logo-ct">
+                <span class="ms-1 font-weight-bold">Bazma Web</span>
+            </a>
+        </div>
+        <hr class="horizontal dark mt-0">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link {{ Route::currentRouteName() == 'dashboard' ? 'active' : '' }}"
+                        href="{{ route('dashboard') }}">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-shop text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
 
-<<<<<<< HEAD
-            <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'user-management') == true ? 'active' : '' }}"
-                    href=
-                    "{{ route('page', ['page' => 'user-management']) }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-ungroup text-dark text-sm opacity-10"></i>
+                <li class="nav-item">
+                    <a class="nav-link {{ str_contains(request()->url(), 'admin-management') == true ? 'active' : '' }}"
+                        href=
+                    "{{ route('page', ['page' => 'admin-management']) }}">
+                        <div
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-circle-08 text-dark text-sm opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Admin Management</span>
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#kesiswaan" class="nav-link" aria-controls="kesiswaan"
+                        role="button" aria-expanded="true">
+                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-archive-2 text-dark text-sm opacity-10"
+                                aria-hidden="true"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Kesiswaan</span>
+                    </a>
+                    <div class="collapse show " id="kesiswaan" style="">
+                        <ul class="nav ms-4">
+                            <li class="nav-item ">
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-kegiatan') == true ? 'active' : '' }} "
+                                    href="{{ route('page', ['page' => 'admin-kegiatan']) }}">
+                                    <span class="sidenav-normal ps-2">Kegiatan </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-prestasi') == true ? 'active' : '' }} "
+                                    href="{{ route('page', ['page' => 'admin-prestasi']) }}">
+                                    <span class="sidenav-normal ps-2">Prestasi</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <span class="nav-link-text ms-1">Users</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'portfolio') == true ? 'active' : '' }}"
-                    href=
-                    "{{ route('page', ['page' => 'portfolio']) }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-ungroup text-dark text-sm opacity-10"></i>
+                </li>
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#postingan" class="nav-link " aria-controls="postingan"
+                        role="button" aria-expanded="true">
+                        <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="ni ni-folder-17 text-dark text-sm opacity-10"
+                                aria-hidden="true"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Postingan</span>
+                    </a>
+                    <div class="collapse show " id="postingan" style="">
+                        <ul class="nav ms-4">
+                            <li class="nav-item ">
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-kategori-postingan') == true ? 'active' : '' }} "
+                                    href="{{ route('page', ['page' => 'admin-kategori-postingan']) }}">
+                                    <span class="sidenav-normal ps-2">Kategori Postingan </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-postingan') == true ? 'active' : '' }} "
+                                    href="{{ route('page', ['page' => 'admin-postingan']) }}">
+                                    <span class="sidenav-normal ps-2">Postingan</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     <span class="nav-link-text ms-1">Portfolio</span>
                 </a>
             </li>
-=======
->>>>>>> 27e5c9c169d6b6ad6b87fb35cc7e2d713fbca9cb
             {{-- <li class="nav-item mt-3 d-flex align-items-center">
                 <div class="ps-4">
                     <i class="fab fa-laravel" style="color: #0057B8;"></i>
@@ -59,86 +101,13 @@
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
                     </div>
-                    <span class="nav-link-text ms-1">Profile</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a data-bs-toggle="collapse" href="#dashboardsExamples" class="nav-link collapsed"
-                    aria-controls="dashboardsExamples" role="button" aria-expanded="false">
-                    <div class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center">
-                        <i class="ni ni-shop text-dark text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Dashboard</span>
-                </a>
-            </li>
-                <div class="collapse show" id="laravelExamples" style="">
-                    <ul class="nav ms-4">
-                        <li class="nav-item ">
-                            <a class="nav-link "
-                                href="https://argon-dashboard-pro-laravel.creative-tim.com/user-profile">
-                                <span class="sidenav-mini-icon"> U </span>
-                                <span class="sidenav-normal"> User Profile </span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active"
-                                href="https://argon-dashboard-pro-laravel.creative-tim.com/user-management">
-                                <span class="sidenav-mini-icon"> U </span>
-                                <span class="sidenav-normal"> User Management </span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link "
-                                href="https://argon-dashboard-pro-laravel.creative-tim.com/role-management">
-                                <span class="sidenav-mini-icon"> R </span>
-                                <span class="sidenav-normal"> Role Management </span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link "
-                                href="https://argon-dashboard-pro-laravel.creative-tim.com/category-management">
-                                <span class="sidenav-mini-icon"> C </span>
-                                <span class="sidenav-normal"> Category Management </span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link "
-                                href="https://argon-dashboard-pro-laravel.creative-tim.com/tag-management">
-                                <span class="sidenav-mini-icon"> T </span>
-                                <span class="sidenav-normal"> Tag Management </span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link "
-                                href="https://argon-dashboard-pro-laravel.creative-tim.com/item-management">
-                                <span class="sidenav-mini-icon"> I </span>
-                                <span class="sidenav-normal"> Items Management </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div> --}}
-            <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'kategori-postingan') == true ? 'active' : '' }}"
-                    href="{{ route('page', ['page' => 'kategori-postingan']) }}">
-                    <div
-                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                        <i class="ni ni-bullet-list-67 text-dark text-sm opacity-10"></i>
-                    </div>
-                    <span class="nav-link-text ms-1">Kategori Postingan</span>
-                </a>
-            </li>
-            {{-- <li class="nav-item mt-3">
-                <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Pages</h6>
-            </li> --}}
+                </li>
+    </aside>
 
             <li class="nav-item">
-                <a class="nav-link {{ str_contains(request()->url(), 'create-postingan') == true ? 'active' : '' }}"
+                <a class="nav-link {{ str_contains(request()->url(), 'tables') == true ? 'active' : '' }}"
                     href=
-<<<<<<< HEAD
                     "{{ route('page', ['page' => 'tables']) }}">
-=======
-                    "{{ route('page', ['page' => 'create-postingan']) }}">
->>>>>>> arya
                     <div
                         class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                         <i class="ni ni-calendar-grid-58 text-dark text-sm opacity-10"></i>

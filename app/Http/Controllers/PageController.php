@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\talent;
-use App\Models\PPDB;
-use App\Models\Katalogtalenta;
+// use App\Models\talent;
+// use App\Models\PPDB;
+// use App\Models\Katalogtalenta;
+use App\Models\Kegiatan;
+use App\Models\Prestasi;
 
 use App\Models\Postingan;
-use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
@@ -38,16 +39,32 @@ class PageController extends Controller
 
     public function kegiatan()
     {
-        return view("pages.kegiatan");
+        $kegiatan = Kegiatan::get();
+        return view("pages.kegiatan")->with('kegiatan', $kegiatan);;
     }
+
+    public function prestasi()
+    {
+        $prestasi = Prestasi::get();
+        return view("pages.prestasi")->with('prestasi', $prestasi);;
+    }
+
     public function galeri()
     {
         return view("pages.galeri");
     }
     public function talent()
     {
+<<<<<<< HEAD
+        // $allTalent = talent::orderBy('id','asc')->paginate(4);
+        // return view("pages.talent")->with('allTalent', $allTalent);
+
+        // $katalogtalenta = katalogtalenta::get();
+        // return view("pages.katalogtalenta")->with('katalogtalenta', $katalogtalenta);
+=======
         $KatalogTalenta = KatalogTalenta::orderBy('id','asc')->paginate(4);
         return view("pages.talent")->with(['KatalogTalenta' => $KatalogTalenta]);
+>>>>>>> alam
     }
 
     public function team()
@@ -62,8 +79,8 @@ class PageController extends Controller
 
     public function ppdb()
     {
-        $ppdb = PPDB::get();
-        return view("pages.ppdb")->with('ppdb', $ppdb);
+        // $ppdb = PPDB::get();
+        // return view("pages.ppdb")->with('ppdb', $ppdb);
     }
 
     public function mitra()

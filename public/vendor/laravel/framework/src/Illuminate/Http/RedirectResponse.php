@@ -39,7 +39,7 @@ class RedirectResponse extends BaseRedirectResponse
      * @param  mixed  $value
      * @return $this
      */
-    public function with($key, $value = null)
+    public function with($key, $value)
     {
         $key = is_array($key) ? $key : [$key => $value];
 
