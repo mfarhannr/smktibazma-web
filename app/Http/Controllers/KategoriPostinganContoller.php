@@ -27,4 +27,9 @@ class KategoriPostinganContoller extends Controller
         KategoriPostingan::findOrFail($id)->delete();
         return redirect()->to('/kategori-postingan')->with('succes','Kategori berhasil dihapus');
     }
+    public function show($id)
+    {
+        $allCategory = KategoriPostingan::find($id);
+        return view('pages.berita', ['allCategory' => $allCategory]);
+    }
 }

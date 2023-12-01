@@ -36,8 +36,9 @@ Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/donasi', [PageController::class, 'donasi'])->name('donasi');
 Route::get('/mitra', [PageController::class, 'mitra'])->name('mitra');
 Route::get('/berita', [PageController::class, 'berita'])->name('berita');
+// Route::get('/{id}', [PageController::class, 'beritabykategori']);
 Route::get('/singleBerita', [PageController::class, 'singleBerita'])->name('singleBerita');
-Route::get('/ppdbs', [PageController::class, 'ppdb'])->name('ppdb');
+Route::get('/ppdb', [PageController::class, 'ppdb'])->name('ppdb');
 
 
 Route::get('/dashboard', function () {
@@ -79,6 +80,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::get('/kategori-postingan', [KategoriPostinganContoller::class, 'kategoriPostingan'])->name('kategori-postingan'); 
 	Route::post('/kategori-postingan', [KategoriPostinganContoller::class, 'store'])->name('kategori-store');
+	Route::get('/kategori-postingan/{id}', [KategoriPostinganContoller::class, 'show']);
 	Route::delete('/kategori-postingan/{id}/delete', [KategoriPostinganContoller::class, 'destroy'])->name('kategori-destroy');
 
 	Route::get('/create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');

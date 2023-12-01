@@ -3,7 +3,7 @@
 @section('content')
     <!-- Hero -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75"
+        <div class="page-header min-vh-50"
             style="
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">

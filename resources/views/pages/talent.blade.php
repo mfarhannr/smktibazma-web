@@ -2,7 +2,7 @@
 
 @section('content')
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75" style="background-image: url('./template/assets/foto/profil_sekolah.jpg');">
+        <div class="page-header min-vh-50" style="background-image: url('./template/assets/foto/profil_sekolah.jpg');">
           <span class="mask bg-gradient-dark opacity-6"></span>
           <div class="container">
             <div class="">

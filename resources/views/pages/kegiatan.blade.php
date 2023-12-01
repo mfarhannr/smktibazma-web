@@ -4,7 +4,7 @@
 
     <!-- Hero -->
     <header class="bg-gradient-dark">
-      <div class="page-header min-vh-75" style="
+      <div class="page-header min-vh-50" style="
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
         <span class="mask bg-gradient-dark opacity-6"></span>
@@ -12,7 +12,7 @@
           <div class="row justify-content-center">
             <div class="col-lg-8 text-center mx-auto my-auto">
               <h1 class="text-white phenomena-bold" >
-                Kegiatan
+                KEGIATAN
               </h1>
             </div>
           </div>

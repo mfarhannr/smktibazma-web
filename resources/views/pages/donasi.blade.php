@@ -3,7 +3,7 @@
 @section('content')
     <!-- Hero -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75"
+        <div class="page-header min-vh-50"
             style="
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
@@ -12,7 +12,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center mx-auto my-auto">
                         <h1 class="text-white phenomena-bold">
-                            Donasi
+                            DONASI
                         </h1>
                     </div>
                 </div>
@@ -46,19 +46,24 @@
                                     yang diharapkan bisa mencetak kader-kader berkarakter unggul dan berdaya saing bersaing
                                     di era global.
                                 </p>
-                                <p>
-                                    Salurkan Wakaf terbaik anda melalui <b>Bank Syariah Indonesia (BSI) :</b>
-                                </p>
-                                <h2 class="phenomena-bold my-5">
-                                    711.88.444.88
-                                </h2>
-                                <p>
-                                    A.N Yayasan Baituzzakah Pertamina
-                                </p>
-                                <p>
-                                    Konfirmasi donasi : 0812 9077 1055
+                                <div class="col-lg-4">
 
-                                </p>
+                                    <div class="card card-body">
+                                        <p>
+                                            Salurkan Wakaf terbaik anda melalui <b>Bank Syariah Indonesia (BSI) :</b>
+                                        </p>
+                                        <img src="./template/assets/img/bsi.png" alt="">
+                                        <h2 class="phenomena-bold my-5">
+                                            711.88.444.88
+                                        </h2>
+                                        <p>
+                                            A.N Yayasan Baituzzakah Pertamina
+                                        </p>
+                                        <p>
+                                            Konfirmasi donasi : 0812 9077 1055
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>

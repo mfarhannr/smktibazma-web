@@ -11,7 +11,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center mx-auto my-auto">
-                    <h1 class="text-white phenomena-bold" style="font-size: 65px">
+                    <h1 class="text-white phenomena-bold">
                         BERITA
                     </h1>
                 </div>
@@ -24,7 +24,7 @@
 <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
     <!-- Content-4 -->
     <section class="py-5">
-        <div class="container">
+        <div class="container px-3">
             <div class="row align-items-center">
                 <div class="col-lg">
                     <div class="col-md">
@@ -37,14 +37,16 @@
                                     <div class="nav-wrapper position-relative">
                                         <ul class="nav nav-pills nav-fill flex-column p-3 phenomena-bold text-lg"
                                             id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" id="heksagon-tab" data-bs-toggle="pill"
-                                                    href="#heksagon" role="tab" aria-controls="heksagon"
-                                                    aria-selected="true">Heksagon</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="rumah-tab" data-bs-toggle="pill" href="#rumah"
-                                                    role="tab" aria-controls="rumah" aria-selected="false">Rumah</a>
+                                            @foreach ($allCategory as $item)
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="{{$item->id}}"
+                                                    href="/{{$item->id}}" >{{$item->name}}</a>
+                                                </li>
+                                            @endforeach
+                                            {{-- <li class="nav-item">
+                                                <a class="nav-link" id="kegiatan-tab" data-bs-toggle="pill"
+                                                    href="/berita/{{ }}" role="tab" aria-controls="kegiatan"
+                                                    aria-selected="false">Kegiatan</a>
                                             </li>
 
                                             <li class="nav-item">
@@ -55,18 +57,47 @@
                                             <li class="nav-item">
                                                 <a class="nav-link" id="huruf-tab" data-bs-toggle="pill" href="#huruf"
                                                     role="tab" aria-controls="huruf" aria-selected="false">Huruf IT</a>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-9">
                                     <div class="tab-content" id="v-pills-tabContent">
-                                        <div class="tab-pane fade show active" id="heksagon" role="tabpanel"
-                                            aria-labelledby="heksagon-tab">
+                                        <div class="tab-pane fade show active" id="" role="tabpanel"
+                                            aria-labelledby="all">
                                             <section class="pb-0">
                                                 <div class="row">
-                                                    @foreach ($allPostingan as $item)
-                                                    <div class="col-lg-4 mb-5">
+                                                    @foreach ($allPostingan as $items)
+                                                    <div class="card card-plain card-blog mb-5">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div
+                                                                    class="card-image position-relative border-radius-lg">
+                                                                    <div class="blur-shadow-image">
+                                                                        <img class="img-fluid border-radius-lg shadow-sm"
+                                                                            src="{{asset('img/'.$items->image)}}"
+                                                                            loading="lazy"
+                                                                            style="width: 300px; height: 200px;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-7 col-md-7 my-sm-auto mt-3 ms-sm-3">
+                                                                <h4>
+                                                                    <a href="/singleBerita/{{$items->id}}"
+                                                                        class="text-dark phenomena-bold">{{Str::limit($items->name,
+                                                                        35)}}</a>
+                                                                </h4>
+                                                                <p>
+                                                                    {!! Str::limit($items->deskripsi, 150) !!}
+                                                                </p>
+                                                                <a href="/singleBerita/{{$items->id}}"
+                                                                    class="btn bg-gradient-info mt-4">
+                                                                    Selengkapnya
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    {{-- <div class="col-lg-4 mb-5">
                                                         <div class="card mt-5 mt-md-0">
                                                             <div
                                                                 class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
@@ -91,7 +122,7 @@
                                                                 </a>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
                                                     @endforeach
                                                 </div>
                                             </section>
