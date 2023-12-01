@@ -66,18 +66,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/profile-static', [AdminPageController::class, 'profile'])->name('profile-static');
     Route::get('/sign-in-static', [AdminPageController::class, 'signin'])->name('sign-in-static');
     Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static');
-
     Route::get('katalogtalenta', [KatalogTalentaController::class, 'index']);
     Route::get('katalogtalenta/create', [KatalogTalentaController::class, 'create']);
     Route::post('katalogtalenta', [KatalogTalentaController::class, 'store'])->name('katalogtalenta.store');
     Route::put('katalogtalenta/{id}', [KatalogTalentaController::class, 'update']);
     Route::get('katalogtalenta/{id}/edit', [KatalogTalentaController::class, 'edit']);
     Route::get('singleTalent/{id}', [KatalogTalentaController::class, 'show']);
-
     Route::delete('katalogtalenta/{id}', [KatalogTalentaController::class, 'destroy']);
-
-
-
     Route::post('logout', [LoginController::class, 'logout'])->name('logout');
     Route::resource('ppdb', PPDBController::class);
     Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');

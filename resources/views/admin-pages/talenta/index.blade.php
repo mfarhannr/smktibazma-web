@@ -27,32 +27,45 @@
                         <table class="table align-items-center mb-0">
                             <thead>
                                 <tr>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         id
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                         Gambar
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Nama
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         Bidang
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         instagram
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
                                         linkedin
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        github
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        Github
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        nomor
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                        No Hp
                                     </th>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        deskripsi
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                         Deskripsi
+                                    </th>
+                                    <th
+                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
+                                         Gmail
                                     </th>
                                     <th
                                         class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
@@ -65,7 +78,6 @@
                                     $i = 1;
                                 @endphp
                                 @forelse ($KatalogTalenta as $item)
-
                                     <tr>
                                         {{-- <td>
                                             <h6 class="mb-0 mx-3 text-sm">{{ $item->judul }}</h6>
@@ -99,7 +111,10 @@
                                             <p class="text-sm font-weight-bold mb-0">{{ $item->nomor }}</p>
                                         </td>
                                         <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{!! $item->deskripsi !!}</p>
+                                            <p class="text-sm font-weight-bold mb-0">{!! Str::limit($item->deskripsi, 12, '...') !!}</p>
+                                        </td>
+                                        <td class="align-middle text-center text-sm">
+                                            <p class="text-sm font-weight-bold mb-0">{{ $item->email }}</p>
                                         </td>
                                         <td class="align-middle text-end">
                                             <div class="d-flex px-3 py-1 justify-content-center align-items-center">
@@ -112,7 +127,8 @@
                                                     @method('delete')
                                                     <button
                                                         onclick="confirm('Are you sure you want to remove the katalogtalenta?') || event.stopImmediatePropagation()"
-                                                        data-bs-toggle="tooltip" data-bs-original-title="Delete katalogtalenta"
+                                                        data-bs-toggle="tooltip"
+                                                        data-bs-original-title="Delete katalogtalenta"
                                                         class="border-0 bg-white" value="Delete">
                                                         <i class="fas fa-trash text-secondary" aria-hidden="true"></i>
                                                     </button>
@@ -125,7 +141,6 @@
                                         $i++;
                                     @endphp
                                 @empty
-
                                 @endforelse
                             </tbody>
                         </table>
