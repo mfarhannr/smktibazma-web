@@ -7,9 +7,8 @@
 
             <div class="card mb-4">
                 <div class="card-header pc-0 d-flex mb-0 justify-content-between">
-                    <h5 class=" mb-0 text-center">Kegiatan</h5>
-                    <a href="/admin-kegiatan/create" class="text-center mb-0 btn bg-gradient-dark btn-sm">Add
-                        Kegiatan</a>
+                    <h5 class=" ps-8 mb-0 text-center">Kegiatan</h5>
+                    <a href="/admin-kegiatan/create" class=" me-7 text-center mb-0 btn bg-gradient-dark btn-sm">Add Kegiatan</a>
                 </div>
 
                 <div class="card-body px-0 pt-0 pb-2">
@@ -17,10 +16,6 @@
                         <table class="table align-items-center mb-0">
                             <thead>
                                 <tr>
-                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-                                        style="width: 10%">
-                                        No
-                                    </th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
                                         style="width: 25%">
                                         Judul
@@ -33,20 +28,16 @@
                                         style="width: 25%">
                                         Deskripsi</th>
                                     <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
-                                        style="width: 15%">
+                                        style="width: 25%">
                                         Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @php
-                                    $i = 1;
+                                $i = 1;
                                 @endphp
-                                @foreach ($kegiatan as $item)
+                                @forelse ($kegiatan as $item)
                                     <tr>
-                                        <td>
-                                            <h6 class="text-center mb-0 mx-3 text-sm">{{$i}}</h6>
-
-                                        </td>
                                         <td>
                                             <h6 class="text-center mb-0 mx-3 text-sm">{{ $item->judul }}</h6>
 
@@ -85,9 +76,10 @@
                                         </td>
                                     </tr>
                                     @php
-                                        $i++;
-                                    @endphp
-                                @endforeach
+                                $i = 1;
+                                @endphp
+                                @empty
+                                @endforelse
                             </tbody>
                         </table>
                     </div>

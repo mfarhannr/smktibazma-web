@@ -7,8 +7,8 @@
 
             <div class="card mb-4">
                 <div class="card-header pc-0 d-flex mb-0 justify-content-between">
-                    <h5 class=" mb-0 text-center">Kegiatan</h5>
-                    <a href="/admin-kegiatan/create" class="text-center mb-0 btn bg-gradient-dark btn-sm">Add
+                    <h5 class=" ps-8 mb-0 text-center">Kegiatan</h5>
+                    <a href="/admin-kegiatan/create" class=" me-7 text-center mb-0 btn bg-gradient-dark btn-sm">Add
                         Kegiatan</a>
                 </div>
 
