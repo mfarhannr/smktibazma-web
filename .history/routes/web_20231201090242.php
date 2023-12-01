@@ -20,13 +20,16 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
 
+use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\PPDBController;
 use App\Http\Controllers\KatalogTalentaController;
-
+// use App\Http\Controllers\UserManagementController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\PrestasiController;
+
+// 27e5c9c169d6b6ad6b87fb35cc7e2d713fbca9cb
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');
@@ -41,8 +44,11 @@ Route::get('/prestasi', [PageController::class, 'prestasi'])->name('prestasi');
 
 
 Route::get('/dashboard', function () {
+<<<<<<<<< Temporary merge branch 1
 	return redirect('/dashboard');
+=========
     return redirect('/dashboard');
+>>>>>>>>> Temporary merge branch 2
 })->middleware('auth');
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest')->name('register');
 Route::post('/register', [RegisterController::class, 'store'])->middleware('guest')->name('register.perform');
@@ -53,6 +59,8 @@ Route::post('/reset-password', [ResetPassword::class, 'send'])->middleware('gues
 Route::get('/change-password', [ChangePassword::class, 'show'])->middleware('guest')->name('change-password');
 Route::post('/change-password', [ChangePassword::class, 'update'])->middleware('guest')->name('change.perform');
 Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard')->middleware('auth');
+<<<<<<<<< Temporary merge branch 1
+
 
 Route::group(['middleware' => 'auth'], function () {
 
@@ -60,25 +68,39 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('admin-portfolio', PortfolioController::class);
 	Route::resource('admin-kegiatan', KegiatanController::class);
 	Route::resource('admin-prestasi', PrestasiController::class);
-    Route::resource('admin-ppdb', PPDBController::class);
-    
 
-    Route::get('admin-katalogtalenta', [KatalogTalentaController::class, 'index']);
+	Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
+	Route::post('/logout', [LoginController::class, 'logout'])->name('logout'); 
+
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/user-management/create', [UserManagementController::class, 'index'])->name('index');
+    Route::get('/virtual-reality', [AdminPageController::class, 'vr'])->name('virtual-reality');
+    Route::get('/rtl', [AdminPageController::class, 'rtl'])->name('rtl');
+    Route::get('/profile', [UserProfileController::class, 'show'])->name('profile');
+    Route::post('/profile', [UserProfileController::class, 'update'])->name('profile.update');
+    Route::get('/profile-static', [AdminPageController::class, 'profile'])->name('profile-static');
+    Route::get('/sign-in-static', [AdminPageController::class, 'signin'])->name('sign-in-static');
+    Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static');
+
+    Route::get('katalogtalenta', [KatalogTalentaController::class, 'index']);
     Route::get('katalogtalenta/create', [KatalogTalentaController::class, 'create']);
-    Route::post('admin-katalogtalenta', [KatalogTalentaController::class, 'store'])->name('katalogtalenta.store');
-    Route::put('admin-katalogtalenta/{id}', [KatalogTalentaController::class, 'update']);
-    Route::get('admin-katalogtalenta/{id}/edit', [KatalogTalentaController::class, 'edit']);
+    Route::post('katalogtalenta', [KatalogTalentaController::class, 'store'])->name('katalogtalenta.store');
+    Route::put('katalogtalenta/{id}', [KatalogTalentaController::class, 'update']);
+    Route::get('katalogtalenta/{id}/edit', [KatalogTalentaController::class, 'edit']);
     Route::get('singleTalent/{id}', [KatalogTalentaController::class, 'show']);
 
     Route::delete('katalogtalenta/{id}', [KatalogTalentaController::class, 'destroy']);
 
-	Route::get('/admin-create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
-	Route::post('/admin-create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
-	Route::put('/admin-create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
+	Route::get('/create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
+	Route::post('/create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
+	Route::put('/create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
 	Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
-	Route::delete('/admin-create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
+	Route::delete('/create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
 
 
     Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+    Route::resource('ppdb', PPDBController::class);
     Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
+>>>>>>>>> Temporary merge branch 2
 });

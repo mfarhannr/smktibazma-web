@@ -72,13 +72,14 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::delete('katalogtalenta/{id}', [KatalogTalentaController::class, 'destroy']);
 
-	Route::get('/admin-create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
-	Route::post('/admin-create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
-	Route::put('/admin-create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
+	Route::get('/'admin-create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
+	Route::post('/create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
+	Route::put('/create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
 	Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
-	Route::delete('/admin-create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
+	Route::delete('/create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
 
 
     Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+    Route::resource('ppdb', PPDBController::class);
     Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
 });

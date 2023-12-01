@@ -60,25 +60,26 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::resource('admin-portfolio', PortfolioController::class);
 	Route::resource('admin-kegiatan', KegiatanController::class);
 	Route::resource('admin-prestasi', PrestasiController::class);
-    Route::resource('admin-ppdb', PPDBController::class);
+    Route::resource('ppdb', PPDBController::class);
     
 
-    Route::get('admin-katalogtalenta', [KatalogTalentaController::class, 'index']);
+    Route::get('katalogtalenta', [KatalogTalentaController::class, 'index']);
     Route::get('katalogtalenta/create', [KatalogTalentaController::class, 'create']);
-    Route::post('admin-katalogtalenta', [KatalogTalentaController::class, 'store'])->name('katalogtalenta.store');
-    Route::put('admin-katalogtalenta/{id}', [KatalogTalentaController::class, 'update']);
-    Route::get('admin-katalogtalenta/{id}/edit', [KatalogTalentaController::class, 'edit']);
+    Route::post('katalogtalenta', [KatalogTalentaController::class, 'store'])->name('katalogtalenta.store');
+    Route::put('katalogtalenta/{id}', [KatalogTalentaController::class, 'update']);
+    Route::get('katalogtalenta/{id}/edit', [KatalogTalentaController::class, 'edit']);
     Route::get('singleTalent/{id}', [KatalogTalentaController::class, 'show']);
 
     Route::delete('katalogtalenta/{id}', [KatalogTalentaController::class, 'destroy']);
 
-	Route::get('/admin-create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
-	Route::post('/admin-create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
-	Route::put('/admin-create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
+	Route::get('/create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
+	Route::post('/create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
+	Route::put('/create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
 	Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
-	Route::delete('/admin-create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
+	Route::delete('/create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
 
 
     Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+    Route::resource('ppdb', PPDBController::class);
     Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
 });

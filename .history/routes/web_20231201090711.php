@@ -80,5 +80,6 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+    Route::resource('ppdb', PPDBController::class);
     Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
 });
