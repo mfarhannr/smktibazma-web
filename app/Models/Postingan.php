@@ -13,7 +13,7 @@ class Postingan extends Model
 
     public function kategori_postingan()
     {
-        return $this->belongsTo('App\Models\KategoriPostingan');
+        return $this->belongsTo(KategoriPostingan::class, 'kategori_postingan_id');
     }
 }
 

@@ -4,7 +4,7 @@
 
     <!-- Hero -->
     <header class="bg-gradient-dark">
-      <div class="page-header min-vh-75" style="
+      <div class="page-header min-vh-50" style="
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
         <span class="mask bg-gradient-dark opacity-6"></span>
@@ -24,13 +24,6 @@
     <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
       <section class="py-5">
         <div class="container px-3">
-          <div class="row">
-            <div class="col-md-8 mx-auto text-center mb-5">
-              <h2>The Executive Team</h2>
-              <p class="font-weight-normal">This is the paragraph where you can write more details about your team. Keep
-                you user engaged by providing meaningful information.</p>
-            </div>
-          </div>
           <div class="row mt-lg-5 mt-3">
             <div class="col-md-6">
               <div class="card card-profile card-plain">
@@ -39,7 +32,7 @@
                     <a href="javascript:;">
                       <div class="position-relative">
                         <div class="blur-shadow-image">
-                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/team-2.jpg">
+                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/2.png">
                         </div>
                       </div>
                     </a>
@@ -47,11 +40,9 @@
                   <div class="col-lg-7 ps-0 my-auto">
                     <div class="card-body text-start">
                       <div class="p-md-0 pt-3">
-                        <h5 class="font-weight-bolder mb-0">Farhan Nurrahmat L.</h5>
-                        <p class="text-uppercase text-sm font-weight-bold mb-2">Financial Examiner</p>
+                        <h3 class="font-weight-bolder phenomena-bold">Muhammad Farhan Nurrahmat L.</h3>
+                        <span class="badge bg-gradient-info my-3">Full Stack - Developer</span>
                       </div>
-                      <p class="mb-4">Today you are you! That is truer than true! There is no one alive who is you-er
-                        than you!</p>
                       <button type="button" class="btn btn-facebook btn-simple btn-lg mb-0 pe-3 ps-2">
                         <i class="fab fa-facebook"></i>
                       </button>
@@ -73,8 +64,7 @@
                     <a href="javascript:;">
                       <div class="position-relative">
                         <div class="blur-shadow-image">
-                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/team-4.jpg"
-                            alt="profile image">
+                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/6.png">
                         </div>
                       </div>
                     </a>
@@ -82,11 +72,9 @@
                   <div class="col-lg-7 ps-0 my-auto">
                     <div class="card-body text-start">
                       <div class="p-md-0 pt-3">
-                        <h5 class="font-weight-bolder mb-0">Ardian Arya Putra</h5>
-                        <p class="text-uppercase text-sm font-weight-bold mb-2">UI Designer</p>
+                        <h3 class="font-weight-bolder phenomena-bold">Ardian Arya Putra</h3>
+                        <span class="badge bg-gradient-info my-3">Full Stack - Developer</span>
                       </div>
-                      <p class="mb-4">Artist is a term applied to a person who engages in an activity deemed to be an
-                        art.</p>
                       <button type="button" class="btn btn-facebook btn-simple btn-lg mb-0 pe-3 ps-2">
                         <i class="fab fa-facebook"></i>
                       </button>
@@ -110,8 +98,7 @@
                     <a href="javascript:;">
                       <div class="position-relative">
                         <div class="blur-shadow-image">
-                          <img class="w-100 border-radius-lg shadow-lg"
-                            src="/template/assets/img/team-5.jpg">
+                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/5.png">
                         </div>
                       </div>
                     </a>
@@ -119,10 +106,9 @@
                   <div class="col-lg-7 ps-0 my-auto">
                     <div class="card-body text-start">
                       <div class="p-md-0 pt-3">
-                        <h5 class="font-weight-bolder mb-0">Muhammad Alamsyah</h5>
-                        <p class="text-uppercase text-sm font-weight-bold mb-2">Legal Secretary</p>
+                        <h3 class="font-weight-bolder phenomena-bold">Muhammad Alamsyah</h3>
+                        <span class="badge bg-gradient-info my-3">Full Stack - Developer</span>
                       </div>
-                      <p class="mb-4">Do not dwell in the past, do not dream of the future, concentrate the mind...</p>
                       <button type="button" class="btn btn-facebook btn-simple btn-lg mb-0 pe-3 ps-2">
                         <i class="fab fa-facebook"></i>
                       </button>
@@ -144,8 +130,7 @@
                     <a href="javascript:;">
                       <div class="position-relative">
                         <div class="blur-shadow-image">
-                          <img class="w-100 border-radius-lg shadow-lg"
-                            src="/template/assets/img/team-3.jpg">
+                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/3.png">
                         </div>
                       </div>
                     </a>
@@ -153,11 +138,9 @@
                   <div class="col-lg-7 ps-0 my-auto">
                     <div class="card-body text-start">
                       <div class="p-md-0 pt-3">
-                        <h5 class="font-weight-bolder mb-0">Ahmad Fauzan Arif H.</h5>
-                        <p class="text-uppercase text-sm font-weight-bold mb-2">Landscape Architect</p>
+                        <h3 class="font-weight-bolder phenomena-bold">Ahmad Fauzan Arif Hakim</h3>
+                        <span class="badge bg-gradient-success my-3">Back End - Developer</span>
                       </div>
-                      <p class="mb-4">Success is not final, failure is not fatal: it is the courage to continue that
-                        counts...</p>
                       <button type="button" class="btn btn-facebook btn-simple btn-lg mb-0 pe-3 ps-2">
                         <i class="fab fa-facebook"></i>
                       </button>
@@ -181,7 +164,7 @@
                     <a href="javascript:;">
                       <div class="position-relative">
                         <div class="blur-shadow-image">
-                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/team-2.jpg">
+                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/1.png">
                         </div>
                       </div>
                     </a>
@@ -189,11 +172,9 @@
                   <div class="col-lg-7 ps-0 my-auto">
                     <div class="card-body text-start">
                       <div class="p-md-0 pt-3">
-                        <h5 class="font-weight-bolder mb-0">Ahmad Sibgatullah L.</h5>
-                        <p class="text-uppercase text-sm font-weight-bold mb-2">Financial Examiner</p>
+                        <h3 class="font-weight-bolder phenomena-bold">Ahmad Sibgatullah Latif</h3>
+                        <span class="badge bg-gradient-danger my-3">UI/UX - Designer</span>
                       </div>
-                      <p class="mb-4">Today you are you! That is truer than true! There is no one alive who is you-er
-                        than you!</p>
                       <button type="button" class="btn btn-facebook btn-simple btn-lg mb-0 pe-3 ps-2">
                         <i class="fab fa-facebook"></i>
                       </button>
@@ -215,8 +196,7 @@
                     <a href="javascript:;">
                       <div class="position-relative">
                         <div class="blur-shadow-image">
-                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/team-4.jpg"
-                            alt="profile image">
+                          <img class="w-100 border-radius-lg shadow-lg" src="/template/assets/img/4.png">
                         </div>
                       </div>
                     </a>
@@ -224,11 +204,9 @@
                   <div class="col-lg-7 ps-0 my-auto">
                     <div class="card-body text-start">
                       <div class="p-md-0 pt-3">
-                        <h5 class="font-weight-bolder mb-0">Bayu Bagaskara</h5>
-                        <p class="text-uppercase text-sm font-weight-bold mb-2">UI Designer</p>
+                        <h3 class="font-weight-bolder phenomena-bold">Bayu Bagaskara</h3>
+                        <span class="badge bg-gradient-danger my-3">UI/UX - Designer</span>
                       </div>
-                      <p class="mb-4">Artist is a term applied to a person who engages in an activity deemed to be an
-                        art.</p>
                       <button type="button" class="btn btn-facebook btn-simple btn-lg mb-0 pe-3 ps-2">
                         <i class="fab fa-facebook"></i>
                       </button>

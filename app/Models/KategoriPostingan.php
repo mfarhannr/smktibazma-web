@@ -13,6 +13,6 @@ class KategoriPostingan extends Model
 
     public function postingan()
     {
-        return $this->hasOne('App\Models\Postingan');
+        return $this->hasMany(Postingan::class, 'kategori_postingan_id');
     }
 }

@@ -4,11 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Models\talent;
 use App\Models\PPDB;
+use App\Models\KategoriPostingan;
+use App\Models\Postingan;
 use App\Models\KatalogTalenta;
 use App\Models\Kegiatan;
 use App\Models\Prestasi;
 
+=========
 use App\Models\Postingan;
+>>>>>>>>> Temporary merge branch 2
+use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
@@ -29,7 +34,8 @@ class PageController extends Controller
 
     public function beranda()
     {
-        return view("pages.beranda");
+        $allPostingan = Postingan::orderBy('id', 'DESC')->paginate(4);
+        return view("pages.beranda")->with(['allPostingan'=> $allPostingan]);
     }
 
     public function profil()
@@ -90,10 +96,17 @@ class PageController extends Controller
 
     public function berita()
     {
-        $allPostingan = Postingan::get();
-        return view('pages.berita')->with(['allPostingan'=> $allPostingan]);
+        $allCategory = KategoriPostingan::orderBy('name', 'ASC')->get();
+        $allPostingan = Postingan::orderBy('id', 'DESC')->get();
+        return view('pages.berita')->with(['allPostingan'=> $allPostingan, 'allCategory' => $allCategory]);
     }
 
+    public function beritabykategori($id)
+    {
+        $allCategory = KategoriPostingan::orderBy('name', 'ASC')->get();
+        $allPostingan = Postingan::where('kategori_postingan_id', $id)->get();
+        return view('pages.berita')->with(['allPostingan'=> $allPostingan, 'allCategory' => $allCategory]);
+    }
     public function singleBerita()
     {
         $allPostingan = Postingan::get();

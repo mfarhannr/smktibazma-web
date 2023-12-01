@@ -77,22 +77,22 @@
                                                 <span>Galeri Foto</span>
                                             </a>
 
-                                        </div>
                                     </div>
-                                </li>
-                                <li class="nav-item dropdown dropdown-hover mx-2">
-                                    <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
-                                        id="dropdownMenuPages8" data-bs-toggle="dropdown" aria-expanded="false"
-                                        style="font-size: 18px">
-                                        Informasi
-                                        <img src="./template/assets/img/down-arrow-dark.svg" alt="down-arrow"
-                                            class="arrow ms-2 d-lg-block d-none" />
-                                        <img src="./template/assets/img/down-arrow-dark.svg" alt="down-arrow"
-                                            class="arrow ms-2 d-lg-none d-block" />
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-lg mt-0 mt-lg-3"
-                                        aria-labelledby="dropdownMenuPages8" style="font-size: 18px">
-                                        <div class="d-none d-lg-block">
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-hover mx-2">
+                                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
+                                    id="dropdownMenuPages8" data-bs-toggle="dropdown" aria-expanded="false"
+                                    style="font-size: 18px">
+                                    Informasi
+                                    <img src="{{asset('./template/assets/img/down-arrow-dark.svg')}}" alt="down-arrow"
+                                        class="arrow ms-2 d-lg-block d-none" />
+                                    <img src="{{asset('./template/assets/img/down-arrow-dark.svg')}}" alt="down-arrow"
+                                        class="arrow ms-2 d-lg-none d-block" />
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-lg mt-0 mt-lg-3"
+                                    aria-labelledby="dropdownMenuPages8" style="font-size: 18px">
+                                    <div class="d-none d-lg-block">
 
                                             <a href="/mitra" class="dropdown-item border-radius-md">
                                                 <span>Mitra</span>
@@ -100,7 +100,7 @@
                                             <a href="/donasi" class="dropdown-item border-radius-md">
                                                 <span>Donasi</span>
                                             </a>
-                                            <a href="/ppdb" class="dropdown-item border-radius-md">
+                                            <a href="/ppdbs" class="dropdown-item border-radius-md">
                                                 <span>PPDB</span>
                                             </a>
                                             <a href="berita" class="dropdown-item border-radius-md">
@@ -123,7 +123,7 @@
                                             <a href="/donasi" class="dropdown-item border-radius-md">
                                                 <span>Donasi</span>
                                             </a>
-                                            <a href="/ppdb" class="dropdown-item border-radius-md">
+                                            <a href="/ppdbs" class="dropdown-item border-radius-md">
                                                 <span>PPDB</span>
                                             </a>
                                             <a href="berita" class="dropdown-item border-radius-md">
@@ -139,17 +139,37 @@
                                         </div>
                                         <!-- End Mobile Menu -->
                                     </div>
-                                </li>
-                                <li class="nav-item dropdown dropdown-hover mx-2">
-                                    <a href="/login"
-                                        class="nav-link d-flex justify-content-between cursor-pointer align-items-center btn bg-gradient-info text-white"
-                                        style="font-size: 18px; margin:0; padding: 8px 16px">Login</a>
-                                </li>
-                            </ul>
-                        </div>
+                                    <!-- Start Mobile Menu -->
+                                    <div class="d-lg-none" style="font-size: 18px">
+                                        <a href="/mitra" class="dropdown-item border-radius-md">
+                                            <span>Mitra</span>
+                                        </a>
+                                        <a href="/donasi" class="dropdown-item border-radius-md">
+                                            <span>Donasi</span>
+                                        </a>
+                                        <a href="/ppdb" class="dropdown-item border-radius-md">
+                                            <span>PPDB</span>
+                                        </a>
+                                        <a href="berita" class="dropdown-item border-radius-md">
+                                            <span>Berita</span>
+                                        </a>
+                                        <a href="/team" class="dropdown-item border-radius-md">
+                                            <span>Tim Pengembang Website</span>
+                                        </a>
+                                    </div>
+                                    <!-- End Mobile Menu -->
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown dropdown-hover mx-2">
+                                <a href="/login"
+                                    class="nav-link d-flex justify-content-between cursor-pointer align-items-center btn bg-gradient-info text-white"
+                                    style="font-size: 18px; margin:0; padding: 8px 16px">Login</a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </div>
-    <!-- End Navbar White -->
+</div>
+<!-- End Navbar White -->

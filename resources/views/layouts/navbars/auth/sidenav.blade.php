@@ -35,30 +35,17 @@
                     </a>
                 </li>
 
-                <li class="nav-item">
-                    <a data-bs-toggle="collapse" href="#kesiswaan" class="nav-link" aria-controls="kesiswaan"
-                        role="button" aria-expanded="true">
-                        <div
-                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="ni ni-archive-2 text-dark text-sm opacity-10" aria-hidden="true"></i>
-                        </div>
-                        <span class="nav-link-text ms-1">Kesiswaan</span>
-                    </a>
-                    <div class="collapse show " id="kesiswaan" style="">
-                        <ul class="nav ms-4">
-                            <li class="nav-item ">
-                                <a class="nav-link {{ str_contains(request()->url(), 'admin-kegiatan') == true ? 'active' : '' }} "
-                                    href="{{ route('page', ['page' => 'admin-kegiatan']) }}">
-                                    <span class="sidenav-normal ps-2">Kegiatan </span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link {{ str_contains(request()->url(), 'admin-prestasi') == true ? 'active' : '' }} "
-                                    href="{{ route('page', ['page' => 'admin-prestasi']) }}">
-                                    <span class="sidenav-normal ps-2">Prestasi</span>
-                                </a>
-                            </li>
-                        </ul>
+            <li class="nav-item">
+                <a class="nav-link {{ str_contains(request()->url(), 'create-postingan') == true ? 'active' : '' }}"
+                    href=
+<<<<<<<<< Temporary merge branch 1
+                    "{{ route('page', ['page' => 'tables']) }}">
+=========
+                    "{{ route('page', ['page' => 'create-postingan']) }}">
+>>>>>>>>> Temporary merge branch 2
+                    <div
+                        class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <i class="ni ni-calendar-grid-58 text-dark text-sm opacity-10"></i>
                     </div>
                 </li>
                 <li class="nav-item">

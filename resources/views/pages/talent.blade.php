@@ -3,9 +3,7 @@
 @section('content')
     <!-- Hero -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-50   uyujjj" style="
-              background-image: url('./template/assets/img/examples/asrama.jpg');
-            ">
+        <div class="page-header min-vh-50" style="background-image: url('./template/assets/foto/profil_sekolah.jpg');">
           <span class="mask bg-gradient-dark opacity-6"></span>
           <div class="container">
             <div class="row justify-content-center">
