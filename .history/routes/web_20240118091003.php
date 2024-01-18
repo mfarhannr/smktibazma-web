@@ -90,6 +90,6 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
 	Route::delete('/admin-create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
 
-	Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
+	// Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
 	Route::post('/logout', [LoginController::class, 'logout'])->name('logout'); 
 });

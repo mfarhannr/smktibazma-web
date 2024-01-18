@@ -19,10 +19,10 @@
 
 <body>
     {{-- card 1 --}}
-    <div class="col-10 mx-auto">
-        <a href="/talent"  class="btn btn-secondary my-4">Back</a>
-    </div>
-    <div class="col-10 mx-auto card border">
+    {{-- <div class="col-10 mx-auto">
+        <i class="fa-solid fa-backward">Kembali</i>
+    </div> --}}
+    <div class="col-10 mx-auto card border mt-10">
         <div class="row py-5">
             <div class="col-xl-4 col-md-6 px-5">
                 <img class="img border-radius-md max-width-300 w-100 mx-auto d-block"
