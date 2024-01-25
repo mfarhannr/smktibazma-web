@@ -109,7 +109,7 @@
                             <li class="nav-item ">
                                 <a class="nav-link {{ str_contains(request()->url(), 'admin-prestasi') == true ? 'active' : '' }} "
                                     href="{{ route('page', ['page' => 'admin-prestasi']) }}">
-                                    <span class="sidenav-normal ps-2">Prestasi</span>
+                                    <span class="sidenav-normal ps-2">pRESTASI</span>
                                 </a>
                             </li>
                         </ul>

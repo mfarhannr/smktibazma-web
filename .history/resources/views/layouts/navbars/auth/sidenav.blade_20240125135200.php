@@ -107,9 +107,9 @@
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link {{ str_contains(request()->url(), 'admin-prestasi') == true ? 'active' : '' }} "
-                                    href="{{ route('page', ['page' => 'admin-prestasi']) }}">
-                                    <span class="sidenav-normal ps-2">Prestasi</span>
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-portfolio') == true ? 'active' : '' }} "
+                                    href="{{ route('page', ['page' => 'admin-portfolio']) }}">
+                                    <span class="sidenav-normal ps-2">Portfolio</span>
                                 </a>
                             </li>
                         </ul>

@@ -1,3 +1,4 @@
+
 <?php
 
 namespace App\Http\Controllers;
@@ -6,8 +7,13 @@ use App\Models\PPDB;
 use Illuminate\Http\Request;
 use File;
 
-// Kode Anda berlanjut di sini
-
+use App\Models\KategoriPostingan;
+use Illuminate\Http\Request;
+// namespace App\Http\Controllers;
+namespace App\Http\Controllers;
+use App\Models\PPDB;
+use Illuminate\Http\Request;
+use File;
 
 class PPDBController extends Controller
 {
