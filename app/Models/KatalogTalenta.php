@@ -10,3 +10,4 @@ class KatalogTalenta extends Model
     protected $table = "katalog_talenta";
     protected $fillable = ['gambar', 'name', 'bidang','instagram', 'linkedin', 'github', 'nomor', 'deskripsi','email' ];
 }
+
