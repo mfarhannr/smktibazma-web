@@ -28,7 +28,6 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\KegiatanController;
-use App\Http\Controllers\SiswaController;
 
 use App\Http\Controllers\KategoriPostinganContoller;
 use App\Http\Controllers\PostinganController;
@@ -79,15 +78,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('singleTalent/{id}', [KatalogTalentaController::class, 'show']);
 
     Route::delete('admin-katalogtalenta/{id}', [KatalogTalentaController::class, 'destroy']);
-
-	Route::get('admin-Siswa', [SiswaController::class, 'index']);
-	Route::get('admin-Siswa/create', [SiswaController::class, 'create']);
-	Route::post('admin-Siswa', [SiswaController::class, 'store'])->name('Siswa.store');
-	Route::put('admin-Siswa/{id}', [SiswaController::class, 'update']);
-	Route::get('admin-Siswa/{id}/edit', [SiswaController::class, 'edit']);
-	Route::get('singleSiswa/{id}', [SiswaController::class, 'show']);
-
-	Route::delete('admin-Siswa/{id}', [SiswaController::class, 'destroy']);
+	
+	
 
 	Route::get('/admin-kategori-postingan', [KategoriPostinganContoller::class, 'kategoriPostingan'])->name('kategori-postingan'); 
 	Route::post('/admin-kategori-postingan', [KategoriPostinganContoller::class, 'store'])->name('kategori-store');

@@ -85,7 +85,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('admin-Siswa', [SiswaController::class, 'store'])->name('Siswa.store');
 	Route::put('admin-Siswa/{id}', [SiswaController::class, 'update']);
 	Route::get('admin-Siswa/{id}/edit', [SiswaController::class, 'edit']);
-	Route::get('singleSiswa/{id}', [SiswaController::class, 'show']);
+	Route::get('singleTalent/{id}', [SiswaController::class, 'show']);
 
 	Route::delete('admin-Siswa/{id}', [SiswaController::class, 'destroy']);
 

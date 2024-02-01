@@ -73,8 +73,8 @@
                     <div class="collapse show " id="katalog-talent" style="">
                         <ul class="nav ms-4">
                             <li class="nav-item ">
-                                <a class="nav-link {{ str_contains(request()->url(), 'admin-Siswa') == true ? 'active' : '' }} "
-                                    href="{{ route('page', ['page' => 'admin-Siswa']) }}">
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-katalogtalenta') == true ? 'active' : '' }} "
+                                    href="{{ route('page', ['page' => 'admin-katalogtalenta']) }}">
                                     <span class="sidenav-normal ps-2">Talent </span>
                                 </a>
                             </li>

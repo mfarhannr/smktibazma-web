@@ -28,7 +28,6 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\KegiatanController;
-use App\Http\Controllers\SiswaController;
 
 use App\Http\Controllers\KategoriPostinganContoller;
 use App\Http\Controllers\PostinganController;
@@ -85,7 +84,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('admin-Siswa', [SiswaController::class, 'store'])->name('Siswa.store');
 	Route::put('admin-Siswa/{id}', [SiswaController::class, 'update']);
 	Route::get('admin-Siswa/{id}/edit', [SiswaController::class, 'edit']);
-	Route::get('singleSiswa/{id}', [SiswaController::class, 'show']);
+	Route::get('singleTalent/{id}', [SiswaController::class, 'show']);
 
 	Route::delete('admin-Siswa/{id}', [SiswaController::class, 'destroy']);
 
