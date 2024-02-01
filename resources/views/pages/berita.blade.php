@@ -29,9 +29,35 @@
                 <div class="col-lg">
                     <div class="col-md">
                         <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
-                            Berita Terbaru
+                            Karir
                         </h3>
                         <section>
+                            <div class="row">
+                                @foreach ($allPostingan as $item)
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card card-plain">
+                                        <div class="card-header p-0 position-relative">
+                                            <a  href="/singleBerita/{{$item->id}}" class="d-block blur-shadow-image">
+                                                <img src="{{asset('img/' . $item->image)}}" alt="img-blur-shadow"
+                                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;"/>
+                                            </a>
+                                        </div>
+                                        <div class="card-body px-0">
+                                            <h5>
+                                                <a class="text-dark phenomena-bold">{{Str::limit($item->name, 35)}}</a>
+                                            </h5>
+                                            <p>
+                                                {!! Str::limit($item->deskripsi, 150) !!}
+                                            </p>
+                                            <a href="/singleBerita/{{$item->id}}"
+                                                class="btn bg-gradient-info mt-4">
+                                                Selengkapnya
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="nav-wrapper position-relative">

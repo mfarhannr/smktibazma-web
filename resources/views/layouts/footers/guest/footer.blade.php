@@ -1,60 +1,44 @@
 <footer class="footer pt-5 mt-5">
   <div class="container">
     <div class=" row">
-      <div class="col-md-6 ms-auto my-auto">
+      <div class="col-md-6">
         <div>
           <a href="/">
-            <img src="./template/assets/img/smktibazma-1.png" class="mb-4 img-fluid" alt="main_logo" style="width: 200px;">
+            <img src="./template/assets/img/smktibazma-1.png" class="mb-4 img-fluid" alt="main_logo"
+              style="width: 200px;">
           </a>
         </div>
         <div>
           <ul class="d-flex flex-row ms-n3 nav">
             <li class="nav-item">
-              <a class="nav-link pe-1" href="https://www.facebook.com/CreativeTim/" target="_blank">
-                <i class="fab fa-facebook text-lg opacity-8" aria-hidden="true"></i>
+              <a class="nav-link pe-1" href="https://www.instagram.com/smktibazma" target="_blank">
+                <i class="fi fi-brands-instagram" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pe-1" href="https://twitter.com/creativetim" target="_blank">
-                <i class="fab fa-twitter text-lg opacity-8" aria-hidden="true"></i>
+              <a class="nav-link pe-1" href="https://www.facebook.com/#" target="_blank">
+                <i class="fi fi-brands-facebook" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w" target="_blank">
-                <i class="fab fa-youtube text-lg opacity-8" aria-hidden="true"></i>
+              <a class="nav-link pe-1" href="https://twitter.com/#" target="_blank">
+                <i class="fi fi-brands-twitter-alt" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-1" href="https://www.youtube.com/@smktibazma" target="_blank">
+                <i class="fi fi-brands-youtube" aria-hidden="true"></i>
               </a>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="col-md-2 col-6">
-        <div>
-          <h6 class="text-sm">Alamat</h6>
-          <ul class="flex-column ms-n3 nav">
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/presentation" target="_blank">
-                Jl. Raya Cikampak Cicadas
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/templates/free" target="_blank">
-                RT. 001/RW 001.
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/templates/premium" target="_blank">
-                Kecamatan Ciampea, Kabupaten Bogor.
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.creative-tim.com/blog" target="_blank">
-                Jawa Barat 16620
-              </a>
-            </li>
-          </ul>
+        <div class="col-lg-6 mt-3">
+          <p>
+            Jl. Raya Cikampak Cicadas 001/RW 001. Kecamatan Ciampea, Kabupaten Bogor. Jawa Barat 16620.
+          </p>
         </div>
       </div>
-      <div class="col-md-2 col-6 mb-4">
+      <div class="col mb-4">
         <div>
           <h6 class="text-sm">Kontak</h6>
           <ul class="flex-column ms-n3 nav">
@@ -71,7 +55,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-2 col-6 mb-4">
+      <div class="col mb-4">
         <div>
           <h6 class="text-sm">Menu</h6>
           <ul class="flex-column ms-n3 nav">
@@ -86,8 +70,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/prestasi"
-                target="_blank">
+              <a class="nav-link" href="/prestasi" target="_blank">
                 Prestasi
               </a>
             </li>
@@ -100,7 +83,7 @@
               <a class="nav-link" href="/ppdb" target="_blank">
                 PPDB
               </a>
-            </li>           
+            </li>
           </ul>
         </div>
       </div>
