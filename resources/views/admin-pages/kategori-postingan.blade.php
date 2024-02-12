@@ -72,7 +72,7 @@
                                             action="{{ url('kategori-postingan/' . $item->id . '/delete') }}" method="post">
                                             @csrf
                                             @method('DELETE')
-                                            <button class="btn btn-link text-danger text-gradient px-3 mb-0">
+                                            <button class="btn btn-xs btn-danger mb-0 font-weight-bold text-xs">
                                                 <span class="btn-inner--icon"><i class="fas fa-trash-alt"></i></span>
                                                 <span class="btn-inner--text"> Delete</span>
                                             </button>

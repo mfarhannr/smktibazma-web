@@ -64,10 +64,21 @@
     <section class="py-5">
         <div class="container px-3">
             <div class="row align-items-center">
+                <h2 class="mb-5 phenomena-bold">
+                    <span class="text-success">• </span>Sambutan Kepala Sekolah
+                </h2>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                            <img src="{{asset('./template/assets/img/pakdahlan.png')}}" alt="img-blur-shadow"
+                                class="img-fluid shadow border-radius-lg" loading="lazy">
+                        </div>
+                        <div class="my-2">
+                            <h3 class="text-center phenomena-bold">Ahmad Dahlan, S.Ag.</h3>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg">
-                    <h2 class="mb-5 phenomena-bold">
-                        <span class="text-success">• </span>Sambutan Kepala Sekolah
-                    </h2>
                     <div style="text-align: justify" class="mt-4">
                         <p>
                             Sekolah Menengah Kejuruan Teknologi Informasi Bazma (SMK
@@ -85,11 +96,6 @@
                             Informatika, Jaringan & Aplikasi) dengan kombinasi
                             kurikulum berbasis asrama.
                         </p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="col-md d-flex justify-content-end">
-                        <img src="{{asset('./template/assets/img/pakdahlan.png')}}" class="img-fluid border-radius-lg shadow-sm" alt="Image Kepala Sekolah">
                     </div>
                 </div>
             </div>
@@ -205,9 +211,10 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="card card-plain">
                         <div class="card-header p-0 position-relative">
-                            <a  href="/singleBerita/{{$item->id}}" class="d-block blur-shadow-image">
+                            <a href="/singleBerita/{{$item->id}}" class="d-block blur-shadow-image">
                                 <img src="{{asset('img/' . $item->image)}}" alt="img-blur-shadow"
-                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;"/>
+                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
+                                    style="width: 300px; height: 200px;" />
                             </a>
                         </div>
                         <div class="card-body px-0">

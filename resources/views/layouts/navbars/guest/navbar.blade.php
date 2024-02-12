@@ -145,9 +145,9 @@
     <div class="row">
         <div class="col-12">
             <nav
-                class="navbar navbar-expand-lg card border-radius-xl mt-4 top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-3">
+                class="navbar navbar-expand-lg card border-radius-xl mt-4 top-0 z-index-3 shadow position-absolute my-3 py-3 start-0 end-0 mx-3">
                 <div class="container-fluid px-0 phenomena-bold">
-                    <a class="navbar-brand text-white ms-sm-3" href="index.html" rel="tooltip"><img
+                    <a class="navbar-brand text-white" href="index.html" rel="tooltip"><img
                             src="{{asset('./template/assets/img/smktibazma-1.png')}}" alt="" style="width: 130px" />
                     </a>
                     <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
@@ -160,7 +160,7 @@
                         </span>
                     </button>
                     <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
-                        <ul class="navbar-nav navbar-nav-hover ms-auto">
+                        <ul class="navbar-nav navbar-nav-hover mx-auto">
                             <li class="nav-item dropdown dropdown-hover mx-2">
                                 <a href="/"
                                     class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center"
@@ -184,34 +184,29 @@
                                 <div class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-lg mt-0 mt-lg-3"
                                     aria-labelledby="dropdownMenuPages8">
                                     <div class="d-none d-lg-block" style="font-size: 18px">
-                                        <a href="/kegiatan" class="dropdown-item border-radius-md">
-                                            <span>Kegiatan</span>
-                                        </a>
-                                        <a href="/prestasi" class="dropdown-item border-radius-md">
-                                            <span>Prestasi</span>
-                                        </a>
                                         <a href="/talent" class="dropdown-item border-radius-md">
                                             <span>Katalog Talent</span>
                                         </a>
-                                        <a href="/galeri" class="dropdown-item border-radius-md">
+                                        <a href="/galeriFoto" class="dropdown-item border-radius-md">
                                             <span>Galeri Foto</span>
+                                        </a>
+                                        <hr class="horizontal dark">
+                                        <a href="/team" class="dropdown-item border-radius-md">
+                                            <span>Tim Pengembang Website</span>
                                         </a>
                                     </div>
                                     <!-- Start Mobile Menu -->
                                     <div class="d-lg-none" style="font-size: 18px">
-                                        <a href="/kegiatan" class="dropdown-item border-radius-md">
-                                            <span>Kegiatan</span>
-                                        </a>
-                                        <a href="/prestasi" class="dropdown-item border-radius-md">
-                                            <span>Prestasi</span>
-                                        </a>
                                         <a href="/talent" class="dropdown-item border-radius-md">
                                             <span>Katalog Talent</span>
                                         </a>
-                                        <a href="/galeri" class="dropdown-item border-radius-md">
+                                        <a href="/galeriFoto" class="dropdown-item border-radius-md">
                                             <span>Galeri Foto</span>
                                         </a>
-
+                                        <hr class="horizontal dark">
+                                        <a href="/team" class="dropdown-item border-radius-md">
+                                            <span>Tim Pengembang Website</span>
+                                        </a>
                                     </div>
                                 </div>
                             </li>
@@ -235,16 +230,9 @@
                                         <a href="/donasi" class="dropdown-item border-radius-md">
                                             <span>Donasi</span>
                                         </a>
-                                        <a href="/ppdb" class="dropdown-item border-radius-md">
-                                            <span>PPDB</span>
-                                        </a>
                                         <a href="berita" class="dropdown-item border-radius-md">
                                             <span>Berita</span>
                                         </a>
-                                        <a href="/team" class="dropdown-item border-radius-md">
-                                            <span>Tim Pengembang Website</span>
-                                        </a>
-
                                     </div>
                                     <!-- Start Mobile Menu -->
                                     <div class="d-lg-none" style="font-size: 18px">
@@ -254,20 +242,21 @@
                                         <a href="/donasi" class="dropdown-item border-radius-md">
                                             <span>Donasi</span>
                                         </a>
-                                        <a href="/ppdb" class="dropdown-item border-radius-md">
-                                            <span>PPDB</span>
-                                        </a>
                                         <a href="berita" class="dropdown-item border-radius-md">
                                             <span>Berita</span>
-                                        </a>
-                                        <a href="/team" class="dropdown-item border-radius-md">
-                                            <span>Tim Pengembang Website</span>
                                         </a>
                                     </div>
                                     <!-- End Mobile Menu -->
                                 </div>
                             </li>
-                            <li class="nav-item dropdown dropdown-hover mx-2">
+                        </ul>
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-2">
+                                <a href="/ppdb"
+                                    class="d-flex justify-content-between cursor-pointer btn btn-outline-info align-items-center"
+                                    style="font-size: 18px; margin:0; padding: 8px 16px">PPDB</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="/login"
                                     class="nav-link d-flex justify-content-between cursor-pointer align-items-center btn bg-gradient-info text-white"
                                     style="font-size: 18px; margin:0; padding: 8px 16px">Login</a>
