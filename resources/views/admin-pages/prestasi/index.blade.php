@@ -7,8 +7,8 @@
 
             <div class="card mb-4">
                 <div class="card-header pc-0 d-flex mb-0 justify-content-between">
-                    <h5 class=" ps-3 mb-0 text-center">Prestasi</h5>
-                    <a href="admin-prestasi/create" class=" me-4 text-center mb-0 btn bg-gradient-dark btn-sm">Add
+                    <h5 class=" mb-0 text-center">Prestasi</h5>
+                    <a href="admin-prestasi/create" class=" text-center mb-0 btn bg-gradient-dark btn-sm">Tambah
                         Prestasi</a>
                 </div>
 

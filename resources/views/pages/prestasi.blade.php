@@ -3,7 +3,7 @@
 @section('content')
     <!-- Hero -->
     <header class="bg-gradient-dark">
-        <div class="page-header min-vh-75"
+        <div class="page-header min-vh-50"
             style="
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
@@ -11,7 +11,7 @@
             <div class="container px-3">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center mx-auto my-auto">
-                        <h1 class="text-white phenomena-bold">
+                        <h1 class="text-white phenomena-bold text-uppercase">
                             Prestasi & Penghargaan
                         </h1>
                     </div>

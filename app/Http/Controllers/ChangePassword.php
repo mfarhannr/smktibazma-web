@@ -21,7 +21,7 @@ class ChangePassword extends Controller
 
     public function show()
     {
-        return view('auth.change-password');thrswhrtnyrnyynynyntyntynynynynrynr
+        return view('auth.change-password');
     }
 
     public function update(Request $request)

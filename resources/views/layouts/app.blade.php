@@ -25,9 +25,10 @@
     <link href="{{ asset('assets/css/nucleo-svg.css') }}" rel="stylesheet" />
     <!-- CSS Files -->
     <link id="pagestyle" href="{{ asset('assets/css/argon-dashboard.css') }}" rel="stylesheet" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
 </head>
 
-<body class="{{ $class ?? '' }}">
+<body class="g-sidenav-show bg-gray-100">
 
     @guest
         @yield('content')

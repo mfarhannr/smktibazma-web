@@ -4,10 +4,11 @@
     @include('layouts.navbars.auth.topnav', ['title' => 'Portfolio'])
     <div class="row mt-4 mx-4">
         <div class="col-12">
+
             <div class="card mb-4">
                 <div class="card-header pc-0 d-flex mb-0 justify-content-between">
-                    <h5 class="mb-0 ms-3 text-center">Portfolio</h5>
-                    <a href="/admin-portfolio/create" class="text-center me-4 mb-0 btn bg-gradient-dark btn-sm">Add Portfolio</a>
+                    <h5 class="mb-0 text-center">Portfolio</h5>
+                    <a href="/admin-portfolio/create" class="text-center mb-0 btn bg-gradient-dark btn-sm">Tambah Portofolio</a>
                 </div>
 
                 <div class="card-body px-0 pt-0 pb-2">

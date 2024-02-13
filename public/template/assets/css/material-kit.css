@@ -111,7 +111,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: black;
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -254,6 +254,8 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 b,
@@ -641,12 +643,7 @@ progress {
   text-transform: uppercase;
 }
 
-.blockquote {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-}
-
-.blockquote> :last-child {
+blockquote> :last-child {
   margin-bottom: 0;
 }
 
@@ -26253,12 +26250,14 @@ p {
   background-image: linear-gradient(195deg, #42424a, #191919);
 }
 
-.blockquote {
+blockquote {
   border-left: 3px solid #6c757d;
 }
 
-.blockquote>span {
+blockquote>p {
   font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
 }
 
 .text-muted {

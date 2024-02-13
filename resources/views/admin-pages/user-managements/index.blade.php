@@ -1,17 +1,18 @@
-@extends('layouts.app')
+@extends('layouts.app', ['class' => 'g-sidenav-show bg-gray-100'])
 
 @section('content')
     @include('layouts.navbars.auth.topnav', ['title' => 'Admin Management'])
     <div class="row mt-4 mx-4">
         <div class="col-12">
+
             <div class="card mb-4">
                 <div class="card-header pc-0 d-flex justify-content-between">
-                    <h5 class="ms-2 mb-0 text-center">Admin Management</h5>
-                    <a href="/admin-management/create"
-                        class="mb-0 me-3 px-5 btn bg-gradient-dark btn-sm text-center">Add Admin</a>
+                    <h6 class="mb-0 text-center">Admin Management</h6>
+                    <a href="/admin-management/create" class="mb-0 px-5 btn bg-gradient-dark btn-sm text-center">Tambah
+                        Admin</a>
                 </div>
 
-               <div class="card-body px-0 pt-0 pb-2">
+                <div class="card-body px-0 pt-0 pb-2">
                     <div class="table-responsive p-0">
                         <table class="table align-items-center mb-0">
                             <thead>
@@ -55,7 +56,8 @@
                                             <p class="text-center text-sm font-weight-bold mb-0">{{ $item->role }}</p>
                                         </td>
                                         <td>
-                                            <form action="/admin-management/{{ $item->id }}" method="POST" class="text-center">
+                                            <form action="/admin-management/{{ $item->id }}" method="POST"
+                                                class="text-center">
                                                 @csrf
                                                 @method('delete')
                                                 <button class="btn btn-xs btn-danger mb-0 font-weight-bold text-xs">
@@ -66,8 +68,8 @@
                                         </td>
                                     </tr>
                                     @php
-                                    $i++;
-                                @endphp
+                                        $i++;
+                                    @endphp
                                 @endforeach
                             </tbody>
                         </table>
@@ -75,5 +77,6 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 @endsection
