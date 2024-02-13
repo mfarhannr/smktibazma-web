@@ -31,7 +31,7 @@
                         <h2 class="phenomena-bold">
                             {{$allPostingan->name}}
                         </h2>
-                        <p class="text-muted bold">Dibuat Pada : {{$allPostingan->created_at}}</p>
+                        <p class="text-muted bold">Dibuat Pada : {{$allPostingan->created_at->format('F j, Y')}}</p>
                         <div class="my-5">
                             <img src="{{asset('img/' . $allPostingan->image)}}" class="img-fluid border-radius-lg" loading="lazy"/>
                         </div>

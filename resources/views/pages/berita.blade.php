@@ -28,11 +28,47 @@
             <div class="row align-items-center">
                 <div class="col-lg">
                     <div class="col-md">
-                        <h3 class="mb-5 phenomena-bold" style="font-size: 40px">
-                            Berita Terbaru
-                        </h3>
+                        <div class="row mb-5">
+                            <div class="col-lg-6">
+                                <h3 class="phenomena-bold" style="font-size: 40px">
+                                    <span class="text-success">• </span>Kegiatan
+                                </h3>
+                            </div>
+                            <div class="col-lg-6 text-end my-auto">
+                                <a href="#" class="text-info icon-move-right">
+                                    Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
                         <section>
                             <div class="row">
+                                @foreach ($postinganKegiatan as $k)
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card card-plain">
+                                        <div class="card-header p-0 position-relative">
+                                            <a href="/singleBerita/{{$k->id}}" class="d-block blur-shadow-image">
+                                                <img src="{{asset('img/' . $k->image)}}" alt="img-blur-shadow"
+                                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
+                                                    style="width: 300px; height: 200px;" />
+                                            </a>
+                                        </div>
+                                        <div class="card-body px-0">
+                                            <p class="text-sm">{{$k->created_at->format('F j, Y')}}</p>
+                                            <h5>
+                                                <a class="text-dark phenomena-bold">{{Str::limit($k->name, 35)}}</a>
+                                            </h5>
+                                            <p>
+                                                {!! Str::limit($k->deskripsi, 150) !!}
+                                            </p>
+                                            <a href="/singleBerita/{{$k->id}}" class="btn btn-outline-info mt-2">
+                                                Selengkapnya
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                            {{-- <div class="row">
                                 <div class="col-lg-3">
                                     <div class="nav-wrapper position-relative">
                                         <ul class="nav nav-pills nav-fill flex-column p-3 phenomena-bold text-lg"
@@ -40,7 +76,7 @@
                                             @foreach ($allCategory as $item)
                                                 <li class="nav-item">
                                                     <a class="nav-link active" id="{{$item->id}}"
-                                                    href="/berita{{$item->id}}" >{{$item->name}}</a>
+                                                    href="/{{$item->id}}" >{{$item->name}}</a>
                                                 </li>
                                             @endforeach
                                             {{-- <li class="nav-item">
@@ -50,14 +86,10 @@
                                             </li>
 
                                             <li class="nav-item">
-                                                <a class="nav-link" id="orang-tab" data-bs-toggle="pill" href="#orang"
-                                                    role="tab" aria-controls="orang" aria-selected="false">Orang</a>
+                                                <a class="nav-link active" id="{{$item->id}}"
+                                                    href="/{{$item->id}}">{{$item->name}}</a>
                                             </li>
-
-                                            <li class="nav-item">
-                                                <a class="nav-link" id="huruf-tab" data-bs-toggle="pill" href="#huruf"
-                                                    role="tab" aria-controls="huruf" aria-selected="false">Huruf IT</a>
-                                            </li> --}}
+                                            @endforeach
                                         </ul>
                                     </div>
                                 </div>
@@ -97,38 +129,124 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    {{-- <div class="col-lg-4 mb-5">
-                                                        <div class="card mt-5 mt-md-0">
-                                                            <div
-                                                                class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
-                                                                <a class="d-block blur-shadow-image">
-                                                                    <img src="{{asset('img/' . $item->image)}}"
-                                                                        alt="img-blur-shadow"
-                                                                        class="img-fluid border-radius-lg shadow-sm"
-                                                                        loading="lazy"
-                                                                        style="width: 300px; height: 200px;" />
-                                                                </a>
-                                                            </div>
-                                                            <div class="card-body pt-3">
-                                                                <h5 class="phenomena-bold">
-                                                                    {{Str::limit($item->name, 35)}}
-                                                                </h5>
-                                                                <p>
-                                                                    {!! Str::limit($item->deskripsi, 50) !!}
-                                                                </p>
-                                                                <a href="/singleBerita/{{$item->id}}"
-                                                                    class="btn bg-gradient-info mt-4">
-                                                                    Selengkapnya
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div> --}}
                                                     @endforeach
                                                 </div>
                                             </section>
                                         </div>
                                     </div>
                                 </div>
+                            </div> --}}
+                        </section>
+                        <div class="row mb-5">
+                            <div class="col-lg-6">
+                                <h3 class="phenomena-bold" style="font-size: 40px">
+                                    <span class="text-success">• </span>Prestasi
+                                </h3>
+                            </div>
+                            <div class="col-lg-6 text-end my-auto">
+                                <a href="#" class="text-info icon-move-right">
+                                    Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <section>
+                            <div class="row">
+                                @foreach ($postinganPrestasi as $p)
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card card-plain">
+                                        <div class="card-header p-0 position-relative">
+                                            <a href="/singleBerita/{{$p->id}}" class="d-block blur-shadow-image">
+                                                <img src="{{asset('img/' . $p->image)}}" alt="img-blur-shadow"
+                                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
+                                                    style="width: 300px; height: 200px;" />
+                                            </a>
+                                        </div>
+                                        <div class="card-body px-0">
+                                            <p class="text-sm">{{$p->created_at->format('F j, Y')}}</p>
+                                            <h5>
+                                                <a class="text-dark phenomena-bold">{{Str::limit($p->name, 35)}}</a>
+                                            </h5>
+                                            <p>
+                                                {!! Str::limit($p->deskripsi, 150) !!}
+                                            </p>
+                                            <a href="/singleBerita/{{$p->id}}" class="btn btn-outline-info mt-2">
+                                                Selengkapnya
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+                            </div>
+                        </section>
+                        {{-- <section>
+                            <div class="row">
+                                @foreach ($allPostingan as $item)
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card card-plain">
+                                        <div class="card-header p-0 position-relative">
+                                            <a href="/singleBerita/{{$item->id}}" class="d-block blur-shadow-image">
+                                                <img src="{{asset('img/' . $item->image)}}" alt="img-blur-shadow"
+                                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
+                                                    style="width: 300px; height: 200px;" />
+                                            </a>
+                                        </div>
+                                        <div class="card-body px-0">
+                                            <p class="text-sm">{{$item->created_at->format('F j, Y')}}</p>
+                                            <h5>
+                                                <a class="text-dark phenomena-bold">{{Str::limit($item->name, 35)}}</a>
+                                            </h5>
+                                            <p>
+                                                {!! Str::limit($item->deskripsi, 150) !!}
+                                            </p>
+                                            <a href="/singleBerita/{{$item->id}}" class="btn btn-outline-info mt-2">
+                                                Selengkapnya
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
+
+                            </div>
+                        </section> --}}
+                        <div class="row mb-5">
+                            <div class="col-lg-6">
+                                <h3 class="phenomena-bold" style="font-size: 40px">
+                                    <span class="text-success">• </span>Lomba
+                                </h3>
+                            </div>
+                            <div class="col-lg-6 text-end my-auto">
+                                <a href="#" class="text-info icon-move-right">
+                                    Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <section>
+                            <div class="row">
+                                @foreach ($postinganLomba as $L)
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="card card-plain">
+                                        <div class="card-header p-0 position-relative">
+                                            <a href="/singleBerita/{{$L->id}}" class="d-block blur-shadow-image">
+                                                <img src="{{asset('img/' . $L->image)}}" alt="img-blur-shadow"
+                                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
+                                                    style="width: 300px; height: 200px;" />
+                                            </a>
+                                        </div>
+                                        <div class="card-body px-0">
+                                            <p class="text-sm">{{$L->created_at->format('F j, Y')}}</p>
+                                            <h5>
+                                                <a class="text-dark phenomena-bold">{{Str::limit($L->name, 35)}}</a>
+                                            </h5>
+                                            <p>
+                                                {!! Str::limit($L->deskripsi, 150) !!}
+                                            </p>
+                                            <a href="/singleBerita/{{$L->id}}" class="btn btn-outline-info mt-2">
+                                                Selengkapnya
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                @endforeach
                             </div>
                         </section>
                     </div>

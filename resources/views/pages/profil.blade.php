@@ -166,30 +166,34 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-8 me-auto py-5 my-auto text-start text-justify">
+                <div class="col-lg-8 me-auto my-auto text-start text-justify mt-5 mt-lg-0">
                   <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="heksagon" role="tabpanel" aria-labelledby="heksagon-tab">
-                      <img class="width-32-px mb-3" src="./template/assets/img/examples/hexagon.png" alt="logo">
+                      <img class="width-32-px mb-3" src="./template/assets/img/examples/hexagon.png" alt="logo"
+                        style="width: 42px">
                       <p>
                         Mengintrepretasikan teknologi, terinspirasi dari bentuk sarang lebah yang diciptakan
                         Allah Ta'ala dengan teknologi yang sangat tinggi.
                       </p>
                     </div>
                     <div class="tab-pane fade" id="rumah" role="tabpanel" aria-labelledby="rumah-tab">
-                      <img class="width-32-px mb-3" src="./template/assets/img/examples/rumah.png" alt="logo">
+                      <img class="width-32-px mb-3" src="./template/assets/img/examples/rumah.png" alt="logo"
+                        style="width: 42px">
                       <p>
                         Mengintrepretasikan tempat tinggal yang nyaman; (Merupakan sekolah dengan model asrama).
                       </p>
                     </div>
                     <div class="tab-pane fade" id="orang" role="tabpanel" aria-labelledby="orang-tab">
-                      <img class="width-32-px mb-3" src="./template/assets/img/examples/orang.png" alt="logo">
+                      <img class="width-32-px mb-3" src="./template/assets/img/examples/orang.png" alt="logo"
+                        style="width: 42px">
                       <p>
                         Representasi dari visi SMK TI BAZMA membentuk pribadi unggul, berkarakter dan menebar
                         manfaat untuk sesama.
                       </p>
                     </div>
                     <div class="tab-pane fade" id="huruf" role="tabpanel" aria-labelledby="huruf-tab">
-                      <img class="width-32-px mb-3" src="./template/assets/img/examples/huruf.png" alt="logo">
+                      <img class="width-32-px mb-3" src="./template/assets/img/examples/huruf.png" alt="logo"
+                        style="width: 42px">
                       <p>
                         Akronim dari Teknologi Informasi.
                       </p>
@@ -228,23 +232,26 @@
                     </ul>
                   </div>
                 </div>
-                <div class="col-lg-8 me-auto my-auto text-start text-justify">
+                <div class="col-lg-8 me-auto my-auto text-start text-justify mt-5 mt-lg-0">
                   <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="biru" role="tabpanel" aria-labelledby="biru-tab">
-                      <img class="width-32-px mb-3" src="./template/assets/img/examples/biru.png" alt="logo">
+                      <img class="width-32-px mb-3" src="./template/assets/img/examples/biru.png" alt="logo"
+                        style="width: 42px">
                       <p>Warna Biru mencerminkan tekad SMK TI BAZMA dalam mencetak insan yang progresif, inovatif
                         dan kreatif di bidang Teknologi Digital. Warna ini juga bermakna kekuatan serta kewibawaan
                         para insan agar mampu menjalankan khasanah keilmuan dengan penuh tanggung jawab.
                       </p>
                     </div>
                     <div class="tab-pane fade" id="hijau" role="tabpanel" aria-labelledby="hijau-tab">
-                      <img class="width-32-px mb-3" src="./template/assets/img/examples/hijau.png" alt="logo">
+                      <img class="width-32-px mb-3" src="./template/assets/img/examples/hijau.png" alt="logo"
+                        style="width: 42px">
                       <p>Warna Hijau mencerminkan identitas alam dan ke-Islam-an, sebagai entitas yang peduli
                         terhadap lingkungan dan berpegang teguh kepada nilai-nilai Islami dalam kehidupan.
                       </p>
                     </div>
                     <div class="tab-pane fade" id="merah" role="tabpanel" aria-labelledby="merah-tab">
-                      <img class="width-32-px mb-3" src="./template/assets/img/examples/merah.png" alt="logo">
+                      <img class="width-32-px mb-3" src="./template/assets/img/examples/merah.png" alt="logo"
+                        style="width: 42px">
                       <p>Warna Merah mencerminkan keberanian, pantang menyerah serta mampu memancarkan energi
                         positif bagi sekitar. Warna ini mencitrakan SMK TI BAZMA sebagai refleksi semangat Para
                         Perwira dalam mengharumkan citra Bangsa Indonesia ke manca negara.
@@ -275,73 +282,48 @@
                 <div class="col-lg-3 col-md-6">
                   <div class="card mt-5 mt-md-0">
                     <div class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
-                      <a class="d-block blur-shadow-image">
-                        <img src="./template/assets/img/examples/kelas.jpg" alt="img-blur-shadow"
-                          class="img-fluid border-radius-lg" loading="lazy" />
-                      </a>
+                      <img src="./template/assets/img/examples/kelas.jpg" alt="img-blur-shadow"
+                        class="img-fluid shadow border-radius-lg" loading="lazy" />
                     </div>
-                    <div class="card-body pt-3 text-center">
-                      <a href="javascript:;">
-                        <h5 class="phenomena-bold">
-                          Ruang Kelas & Lab
-                        </h5>
-                      </a>
+                    <div class="my-2 text-center">
+                      <h5 class="phenomena-bold">
+                        Ruang Kelas & Lab
+                      </h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card mt-5 mt-md-0">
                     <div class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
-                      <a class="d-block blur-shadow-image">
-                        <img src="./template/assets/img/examples/masjid.jpg" alt="img-blur-shadow"
-                          class="img-fluid border-radius-lg" loading="lazy" />
-                      </a>
-                      <div class="colored-shadow" style="
-                                  background-image: url('./template/assets/img/examples/masjid.jpg');
-                                "></div>
+                      <img src="./template/assets/img/examples/masjid.jpg" alt="img-blur-shadow"
+                        class="img-fluid shadow border-radius-lg" loading="lazy" />
                     </div>
-                    <div class="card-body pt-3 text-center">
-                      <a href="javascript:;">
-                        <h5 class="phenomena-bold">Masjid & Aula</h5>
-                      </a>
+                    <div class="my-2 text-center">
+                      <h5 class="phenomena-bold">Masjid & Aula</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card mt-5 mt-md-0">
                     <div class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
-                      <a class="d-block blur-shadow-image">
-                        <img src="./template/assets/img/examples/asrama.jpg" alt="img-blur-shadow"
-                          class="img-fluid border-radius-lg" loading="lazy" />
-                      </a>
-                      <div class="colored-shadow" style="
-                                  background-image: url('./template/assets/img/examples/asrama.jpg');
-                                "></div>
+                      <img src="./template/assets/img/examples/asrama.jpg" alt="img-blur-shadow"
+                        class="img-fluid shadow border-radius-lg" loading="lazy" />
                     </div>
-                    <div class="card-body pt-3 text-center">
-                      <a href="javascript:;">
-                        <h5 class="phenomena-bold">Gedung Asrama</h5>
-                      </a>
+                    <div class="my-2 text-center">
+                      <h5 class="phenomena-bold">Gedung Asrama</h5>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                   <div class="card mt-5 mt-md-0">
                     <div class="card-header p-0 mx-3 mt-n4 position-relative z-index-2">
-                      <a class="d-block blur-shadow-image">
-                        <img src="./template/assets/img/examples/lapangan.jpg" alt="img-blur-shadow"
-                          class="img-fluid border-radius-lg" loading="lazy" />
-                      </a>
-                      <div class="colored-shadow" style="
-                                  background-image: url('./template/assets/img/examples/lapangan.jpg');
-                                "></div>
+                      <img src="./template/assets/img/examples/lapangan.jpg" alt="img-blur-shadow"
+                        class="img-fluid shadow border-radius-lg" loading="lazy" />
                     </div>
-                    <div class="card-body pt-3 text-center">
-                      <a href="javascript:;">
-                        <h5 class="phenomena-bold">
-                          Lapangan Olahraga
-                        </h5>
-                      </a>
+                    <div class="my-2 text-center">
+                      <h5 class="phenomena-bold">
+                        Lapangan Olahraga
+                      </h5>
                     </div>
                   </div>
                 </div>

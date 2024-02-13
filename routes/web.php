@@ -20,6 +20,9 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ResetPassword;
 use App\Http\Controllers\ChangePassword;
 
+use App\Http\Controllers\KategoriPostinganContoller;
+use App\Http\Controllers\PostinganController;
+
 
 use App\Http\Controllers\PPDBController;
 use App\Http\Controllers\KatalogTalentaController;
@@ -30,21 +33,21 @@ use App\Http\Controllers\PrestasiController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\SiswaController;
 
-use App\Http\Controllers\KategoriPostinganContoller;
-use App\Http\Controllers\PostinganController;
+use App\Http\Controllers\GaleriController;
+use App\Http\Controllers\KategoriGaleriController;
 
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');
 Route::get('/kegiatan', [PageController::class, 'kegiatan'])->name('kegiatan');
-Route::get('/prestasi', [PageController::class, 'prestasi'])->name('prestasi');
-Route::get('/galeri', [PageController::class, 'galeri'])->name('galeri');
+Route::get('/galeriFoto', [PageController::class, 'galeriFoto'])->name('galeriFoto');
+Route::get('/galeriFoto', [PageController::class, 'galeribykategori']);
 Route::get('/talent', [PageController::class, 'talent'])->name('talent');
 Route::get('/team', [PageController::class, 'team'])->name('team');
 Route::get('/donasi', [PageController::class, 'donasi'])->name('donasi');
 Route::get('/mitra', [PageController::class, 'mitra'])->name('mitra');
 Route::get('/berita', [PageController::class, 'berita'])->name('berita');
-Route::get('/berita{id}', [PageController::class, 'beritabykategori']);
+Route::get('/berita', [PageController::class, 'beritabykategori']);
 Route::get('/singleBerita', [PageController::class, 'singleBerita'])->name('singleBerita');
 Route::get('/ppdb', [PageController::class, 'ppdb'])->name('ppdb');
 
@@ -89,17 +92,31 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::delete('admin-Siswa/{id}', [SiswaController::class, 'destroy']);
 
-	Route::get('/admin-kategori-postingan', [KategoriPostinganContoller::class, 'kategoriPostingan'])->name('kategori-postingan'); 
-	Route::post('/admin-kategori-postingan', [KategoriPostinganContoller::class, 'store'])->name('kategori-store');
-	Route::get('/admin-kategori-postingan/{id}', [KategoriPostinganContoller::class, 'show']);
-	Route::delete('/admin-kategori-postingan/{id}/delete', [KategoriPostinganContoller::class, 'destroy'])->name('kategori-destroy');
-	Route::get('/admin-create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
-	Route::post('/admin-create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
+	Route::get('/virtual-reality', [AdminPageController::class, 'vr'])->name('virtual-reality');
+	Route::get('/rtl', [AdminPageController::class, 'rtl'])->name('rtl');
+	Route::get('/profile', [UserProfileController::class, 'show'])->name('profile');
+	Route::post('/profile', [UserProfileController::class, 'update'])->name('profile.update');
+	Route::get('/profile-static', [AdminPageController::class, 'profile'])->name('profile-static');
+	Route::get('/sign-in-static', [AdminPageController::class, 'signin'])->name('sign-in-static');
+	Route::get('/sign-up-static', [AdminPageController::class, 'signup'])->name('sign-up-static'); 
+	Route::post('logout', [LoginController::class, 'logout'])->name('logout'); 
 
-	Route::put('/admin-create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
-	Route::get('/singleBerita{id}', [PostinganController::class, 'show'])->name('singleBerita');
-	Route::delete('/admin-create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
+	Route::get('/kategori-postingan', [KategoriPostinganContoller::class, 'kategoriPostingan'])->name('kategori-postingan'); 
+	Route::post('/kategori-postingan', [KategoriPostinganContoller::class, 'store'])->name('kategori-store');
+	Route::get('/kategori-postingan/{id}', [KategoriPostinganContoller::class, 'show']);
+	Route::delete('/kategori-postingan/{id}/delete', [KategoriPostinganContoller::class, 'destroy'])->name('kategori-destroy');
 
+	Route::get('/kategori-galeri/{id}', [KategoriGaleriController::class, 'show']);
+	// Kategori Galeri
+	Route::get('/kategori-galeri', [KategoriGaleriController::class, 'kategorigaleri'])->name('kategori-galeri'); 
+	Route::post('/kategori-galeri', [KategoriGaleriController::class, 'store'])->name('kategori-galeri-store');
+	Route::delete('/kategori-galeri/{id}/delete', [KategoriGaleriController::class, 'destroy'])->name('kategori-galeri-destroy');
+
+	// Galeri
+	Route::get('/create-galeri', [GaleriController::class, 'galeri'])->name('create-galeri');
+	Route::post('/create-galeri', [GaleriController::class, 'store'])->name('create-galeri-store');
+	Route::put('/create-galeri/{id}/edit', [GaleriController::class, 'edit'])->name('create-galeri-edit');
+	Route::delete('/create-galeri/{id}/delete', [GaleriController::class,'destroy'])->name('create-galeri-destroy');
 	Route::get('/{page}', [AdminPageController::class, 'index'])->name('page');
 	Route::post('/logout', [LoginController::class, 'logout'])->name('logout'); 
 });
