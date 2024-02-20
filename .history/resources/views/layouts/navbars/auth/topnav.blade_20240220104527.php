@@ -21,7 +21,7 @@
                 <li class="nav-item d-flex align-items-center">
                     <form role="form" method="post" action="{{ route('logout') }}" id="logout-form">
                         @csrf
-                        <a href="{{ route('logout') }}"
+                        <a href="/logout"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
                             class="nav-link text-white font-weight-bold px-0"
                             >

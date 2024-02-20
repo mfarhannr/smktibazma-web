@@ -29,6 +29,7 @@ class UserController extends Controller
             
         ]);
         $user = User::create($attributes);
+        // auth()->login($user);
 
         // return redirect('/admin-management');
         return redirect()->to('/admin-management')->with('succes', 'Admin berhasil ditambahkan');

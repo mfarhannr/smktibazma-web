@@ -91,12 +91,14 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::delete('/kategori-postingan/{id}/delete', [KategoriPostinganContoller::class, 'destroy'])->name('kategori-destroy');
 		Route::get('/kategori-galeri/{id}', [KategoriGaleriController::class, 'show']);
 
+
 		// Postingan
 		Route::get('/create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
 		Route::post('/create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
 		Route::put('/create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
 		Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
 		Route::delete('/create-postingan/{id}/delete', [PostinganController::class, 'destroy'])->name('create-postingan-destroy');
+
 
 		// Kategori Galeri
 		Route::get('/kategori-galeri', [KategoriGaleriController::class, 'kategorigaleri'])->name('kategori-galeri');

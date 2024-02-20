@@ -13,7 +13,7 @@
                     <h6>Tambah Postingan</h6>
                     <div class="row">
                         <div class="col-md-12">
-                            <form action="/create-postingan" method="POST" enctype="multipart/form-data">
+                            <form action="/admin-create-postingan" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-group">
                                     <label for="example-text-input" class="form-control-label">Judul</label>

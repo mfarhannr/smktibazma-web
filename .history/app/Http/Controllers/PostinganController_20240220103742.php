@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 use File;
 
 class PostinganController extends Controller
-{
+{admin
     public function postingan()
     {
         $allPostingan = Postingan::get();
@@ -38,7 +38,7 @@ class PostinganController extends Controller
 
         $allPostingan->save();
 
-        return redirect()->to('/create-postingan')->with('succes', 'Postingan Berhasil Dibuat');
+        return redirect()->to('/admin-create-postingan')->with('succes', 'Postingan Berhasil Dibuat');
     }
     public function edit($id, Request $request)
     {
@@ -69,7 +69,7 @@ class PostinganController extends Controller
 
         $allPostingan->save();
 
-        return redirect()->to('/create-postingan')->with('succes', 'Postingan Berhasil Diupdate');
+        return redirect()->to('/admin-create-postingan')->with('succes', 'Postingan Berhasil Diupdate');
     }
     public function show($id)
     {
@@ -85,6 +85,6 @@ class PostinganController extends Controller
 
         $allPostingan->delete();
 
-        return redirect()->to('/create-postingan')->with('succes', 'Postingan Berhasil Dihapus');
+        return redirect()->to('/admin-create-postingan')->with('succes', 'Postingan Berhasil Dihapus');
     }
 }

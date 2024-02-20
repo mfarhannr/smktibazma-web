@@ -91,7 +91,9 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::delete('/kategori-postingan/{id}/delete', [KategoriPostinganContoller::class, 'destroy'])->name('kategori-destroy');
 		Route::get('/kategori-galeri/{id}', [KategoriGaleriController::class, 'show']);
 
-		// Postingan
+		//Postingan
+		User
+// Postingan
 		Route::get('/create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
 		Route::post('/create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
 		Route::put('/create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
@@ -115,12 +117,10 @@ Route::group(['middleware' => 'auth'], function () {
 
 	Route::group(['middleware' => 'checkRole:siswa'], function () {
 		Route::resource('admin-portfolio', PortfolioController::class);
-		Route::get(
-			'/{page}',
+		Route::get('/{page}',
 			[AdminPageController::class, 'index']
 		)->name('page');
-		Route::post(
-			'/logout',
+		Route::post('/logout',
 			[LoginController::class, 'logout']
 		)->name('logout');
 	});
