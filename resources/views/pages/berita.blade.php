@@ -48,8 +48,8 @@
                                         <div class="card-header p-0 position-relative">
                                             <a href="/singleBerita/{{$k->id}}" class="d-block blur-shadow-image">
                                                 <img src="{{asset('img/' . $k->image)}}" alt="img-blur-shadow"
-                                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
-                                                    style="width: 300px; height: 200px;" />
+                                                    class="img-berita shadow-sm border-radius-lg" loading="lazy"
+                                                    style="width: 300px; height: 200px" />
                                             </a>
                                         </div>
                                         <div class="card-body px-0">

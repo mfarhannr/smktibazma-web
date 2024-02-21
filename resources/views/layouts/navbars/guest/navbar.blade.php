@@ -251,9 +251,9 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav">
-                            <li class="nav-item me-2">
+                            <li class="nav-item me-lg-2">
                                 <a href="/ppdb"
-                                    class="d-flex justify-content-between cursor-pointer btn btn-outline-info align-items-center"
+                                    class="d-flex justify-content-between cursor-pointer btn btn-outline-info align-items-center mb-2 mb-lg-0"
                                     style="font-size: 18px; margin:0; padding: 8px 16px">PPDB</a>
                             </li>
                             <li class="nav-item">

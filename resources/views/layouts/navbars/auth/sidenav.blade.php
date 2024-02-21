@@ -2,7 +2,8 @@
     id="sidenav-main">
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
-            aria-hidden="true" id="iconSidenav"></i>
+            aria-hidden="true" id="iconSidenav">
+        </i>
         <a class="navbar-brand m-0" href="{{ route('beranda') }}">
             <img src="{{ asset('./img/logo-ct.png') }}" class="navbar-img h-100" alt="logo-ct">
             <span class="ms-1 font-weight-bold">Bazma Web</span>
@@ -32,6 +33,7 @@
                     <span class="nav-link-text ms-1">Admin Management</span>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#postingan" class="nav-link " aria-controls="postingan" role="button"
                     aria-expanded="true">
@@ -59,6 +61,7 @@
                 </div>
                 </a>
             </li>
+
             <li class="nav-item">
                 <a data-bs-toggle="collapse" href="#katalog-talent" class="nav-link " aria-controls="katalog-talent"
                     role="button" aria-expanded="true">
@@ -168,4 +171,6 @@
                     </ul>
                 </div>
             </li>
+        </ul>
+    </div>
 </aside>

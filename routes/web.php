@@ -41,7 +41,13 @@ Route::get('/donasi', [PageController::class, 'donasi'])->name('donasi');
 Route::get('/mitra', [PageController::class, 'mitra'])->name('mitra');
 Route::get('/berita', [PageController::class, 'berita'])->name('berita');
 Route::get('/berita', [PageController::class, 'beritabykategori']);
-Route::get('/singleBerita', [PageController::class, 'singleBerita'])->name('singleBerita');
+Route::get('/singleBerita/{id}', [PageController::class, 'singleBerita'])->name('singleBerita');
+Route::get('/singleGaleriF', [PageController::class, 'singleGaleriF'])->name('singleGaleriF');
+Route::get('/singleGaleriB', [PageController::class, 'singleGaleriB'])->name('singleGaleriB');
+Route::get('/singleGaleriP', [PageController::class, 'singleGaleriP'])->name('singleGaleriP');
+Route::get('/singleGaleriE', [PageController::class, 'singleGaleriE'])->name('singleGaleriE');
+Route::get('/singleGaleriC', [PageController::class, 'singleGaleriC'])->name('singleGaleriC');
+Route::get('/singleGaleriT', [PageController::class, 'singleGaleriT'])->name('singleGaleriT');
 Route::get('/ppdb', [PageController::class, 'ppdb'])->name('ppdb');
 
 
@@ -92,7 +98,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::get('/create-postingan', [PostinganController::class, 'postingan'])->name('create-postingan');
 	Route::post('/create-postingan', [PostinganController::class, 'store'])->name('create-postingan-store');
 	Route::put('/create-postingan/{id}/edit', [PostinganController::class, 'edit'])->name('create-postingan-edit');
-	Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
+	// Route::get('/singleBerita/{id}', [PostinganController::class, 'show'])->name('singleBerita');
 	Route::delete('/create-postingan/{id}/delete', [PostinganController::class,'destroy'])->name('create-postingan-destroy');
 
 	// Kategori Galeri
