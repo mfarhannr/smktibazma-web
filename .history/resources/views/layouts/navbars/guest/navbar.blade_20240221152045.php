@@ -119,19 +119,19 @@
                             </li>
                             @auth
                                 <li class="nav-item">
-                                    <a href="/dashboard"
-                                        class="nav-link d-flex justify-content-between cursor-pointer align-items-center btn bg-gradient-info text-white"
-                                        style="font-size: 18px; margin:0; padding: 8px 16px;">Dashboard</a>
-                                </li>
-                            @endauth
-                            @guest
-                                <li class="nav-item">
                                     <a href="/login"
                                         class="nav-link d-flex justify-content-between cursor-pointer align-items-center btn bg-gradient-info text-white"
                                         style="font-size: 18px; margin:0; padding: 8px 16px;">Login</a>
                                 </li>
+                            @endauth
+                            @guest
+                            <li class="nav-item">
+                                <a href="/login"
+                                    class="nav-link d-flex justify-content-between cursor-pointer align-items-center btn bg-gradient-info text-white"
+                                    style="font-size: 18px; margin:0; padding: 8px 16px;">Login</a>
+                            </li>    
                             @endguest
-
+                            
 
                         </ul>
                     </div>

@@ -30,7 +30,7 @@ use App\Http\Controllers\KatalogTalentaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\SiswaController;
-// use Illuminate\Routing\RouteGroup;
+use Illuminate\Routing\RouteGroup;
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');

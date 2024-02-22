@@ -30,7 +30,7 @@ use App\Http\Controllers\KatalogTalentaController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\SiswaController;
-// use Illuminate\Routing\RouteGroup;
+use Illuminate\Routing\RouteGroup;
 
 Route::get('/', [PageController::class, 'beranda'])->name('beranda');
 Route::get('/profil', [PageController::class, 'profil'])->name('profil');
@@ -46,6 +46,9 @@ Route::get('/berita', [PageController::class, 'beritabykategori']);
 Route::get('/singleBerita', [PageController::class, 'singleBerita'])->name('singleBerita');
 Route::get('/ppdb', [PageController::class, 'ppdb'])->name('ppdb');
 
+Route::middleware(['gue', 'second'])->group(function () {
+	
+});
 
 Route::get('/dashboard', function () {
 	return redirect('/dashboard');
@@ -68,11 +71,7 @@ Route::group(['middleware' => 'auth'], function () {
 		Route::resource('admin-portfolio', PortfolioController::class);
 
 		//Katalog Talent
-
-		// Route::prefix(['admin'])->group(function () {
-		// 	Route::get('katalogtalenta', [KatalogTalentaController::class, 'index'])->name('admin.katalog.index');
-		// });
-		Route::get('admin-katalogtalenta', [KatalogTalentaController::class, 'index'])->name('index');
+		Route::get('admin-katalogtalenta', [KatalogTalentaController::class, 'index']);
 		Route::get('admin-katalogtalenta/create', [KatalogTalentaController::class, 'create']);
 		Route::post('admin-katalogtalenta', [KatalogTalentaController::class, 'store'])->name('katalogtalenta.store');
 		Route::put('admin-katalogtalenta/{id}', [KatalogTalentaController::class, 'update']);

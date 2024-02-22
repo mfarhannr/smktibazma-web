@@ -70,7 +70,7 @@ class PostinganController extends Controller
         $allPostingan->save();
 
         return redirect()->to('/create-postingan')->with('succes', 'Postingan Berhasil Diupdate');
-        return redirect(route('admin.katalog.index'));
+        ret
     }
     public function show($id)
     {
