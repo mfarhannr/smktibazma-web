@@ -121,72 +121,48 @@
                         architecto consequatur dolor ut.
                     </p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card card-plain">
-                            <div class="card-header p-0 position-relative">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="./template/assets/img/examples/testimonial-6-2.jpg" alt="img-blur-shadow"
-                                        class="img-fluid shadow border-radius-lg" loading="lazy" />
-                                </a>
-                            </div>
-                            <div class="card-body px-0">
-                                <h5>
-                                    <a href="javascript:;" class="text-dark font-weight-bold">Bulu Tangkis</a>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card card-plain">
-                            <div class="card-header p-0 position-relative">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="./template/assets/img/examples/testimonial-6-3.jpg" alt="img-blur-shadow"
-                                        class="img-fluid shadow border-radius-lg" loading="lazy" />
-                                </a>
-                            </div>
-                            <div class="card-body px-0">
-                                <h5>
-                                    <a href="javascript:;" class="text-dark font-weight-bold">Futsal</a>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card card-plain">
-                            <div class="card-header p-0 position-relative">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="./template/assets/img/examples/blog-9-4.jpg" alt="img-blur-shadow"
-                                        class="img-fluid shadow border-radius-lg" loading="lazy" />
-                                </a>
-                            </div>
-                            <div class="card-body px-0">
-                                <h5>
-                                    <a href="javascript:;" class="text-dark font-weight-bold">Renang</a>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="card card-plain">
-                            <div class="card-header p-0 position-relative">
-                                <a class="d-block blur-shadow-image">
-                                    <img src="./template/assets/img/examples/blog-9-4.jpg" alt="img-blur-shadow"
-                                        class="img-fluid shadow border-radius-lg" loading="lazy" />
-                                </a>
-                            </div>
-                            <div class="card-body px-0">
-                                <h5>
-                                    <a href="javascript:;" class="text-dark font-weight-bold">E-Sport</a>
-                                </h5>
-                            </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Content-1 -->
+
+    <!-- Start Content-2 -->
+    <section class="py-5">
+        <div class="container px-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-5 phenomena-bold">
+                        <span class="text-success">• </span>Galeri Foto
+                    </h2>
+                </div>
+            </div>
+            <div style="text-align: justify" class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+                    sit itaque molestias rem, omnis aliquam quisquam unde excepturi
+                    pariatur labore nihil qui maxime distinctio fugit repudiandae,
+                    architecto consequatur dolor ut.
+                </p>
+            </div>
+            <div class="row">
+                @foreach ($allGallery as $item)
+                <div class="col-lg-3 col-sm-6">
+                    <div class="card card-plain mb-5">
+                        <div class="card-header p-0 position-relative">
+                            <a href="#" class="d-block blur-shadow-image">
+                                <img src="{{asset('img/' . $item->image)}}" alt="img-blur-shadow"
+                                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
+                                    style="width: 300px; height: 200px;" />
+                            </a>
                         </div>
                     </div>
                 </div>
-                <a class="btn bg-gradient-info text-white" href="/galeri">Selengkapnya</a>
+                @endforeach
             </div>
-        </section>
-        <!-- End Content-2 -->
+            <a class="btn bg-gradient-info text-white" href="/galeriFoto">Selengkapnya</a>
+        </div>
+    </section>
+    <!-- End Content-2 -->
 
         <!-- Start Content-2 -->
         <section class="py-5">

@@ -1,28 +1,27 @@
 @extends('layouts.app-pages')
 
 @section('content')
-    <!-- Hero -->
-    <header class="bg-gradient-dark">
-        <div class="page-header min-vh-50"
-            style="
+<!-- Hero -->
+<header class="bg-gradient-dark">
+    <div class="page-header min-vh-50" style="
             background-image: url('./template/assets/img/examples/asrama.jpg');
           ">
-            <span class="mask bg-gradient-dark opacity-6"></span>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center mx-auto my-auto">
-                        <h1 class="text-white phenomena-bold">
-                            PPDB
-                        </h1>
-                    </div>
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center mx-auto my-auto">
+                    <h1 class="text-white phenomena-bold">
+                        PPDB
+                    </h1>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- End Hero -->
+    </div>
+</header>
+<!-- End Hero -->
 
-    <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
-        <!-- Content-1 -->
+<div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
+    <!-- Content-1 -->
 
         <section class="py-4">
             <div class="container px-3">
@@ -67,8 +66,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End of Content-1 -->
+        </div>
+    </section>
+    <!-- End of Content-1 -->
 
         <!-- Content-2 -->
         <section>
@@ -175,8 +175,9 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End of Content-2 -->
+        </div>
+    </section>
+    <!-- End of Content-2 -->
 
         <!-- Content-3 -->
         <section class="py-4">
@@ -211,40 +212,44 @@
                                                     08 1111 4433 9
                                                 </h5>
                                             </div>
+                                            <h5 class="my-auto mx-auto phenomena-bold">
+                                                08 1111 4433 9
+                                            </h5>
                                         </div>
                                     </div>
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="card card-body">
-                                            <div class="author">
-                                                <div class="icon icon-shape bg-gradient-info shadow-info text-center">
-                                                    <i class="fi fi-brands-instagram"></i>
-                                                </div>
-                                                <h5 class="my-auto mx-auto phenomena-bold">
-                                                    @smktibazma
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
+                                <div class="col-lg-3 mb-3">
+                                    <div class="card card-body">
+                                        <div class="author">
+                                            <div class="icon icon-shape bg-gradient-info shadow-info text-center">
+                                                <i class="fi fi-brands-instagram"></i>
+                                            </div>
+                                            <h5 class="my-auto mx-auto phenomena-bold">
+                                                @smktibazma
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- End of Content-3 -->
-        {{-- <section class="py-5">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg">
-                            <h2>tdidak ada </h2>
-                        </div>
-                    </div>
+    <!-- End of Content-3 -->
+    {{-- <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg">
+                    <h2>tdidak ada </h2>
                 </div>
-            </section> --}}
+            </div>
+        </div>
+    </section> --}}
 
 
-    </div>
+</div>
 @endsection

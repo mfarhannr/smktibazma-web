@@ -21094,6 +21094,9 @@ hr.horizontal.gray-light {
   max-width: 100%;
   max-height: 3rem;
 }
+/* .navbar-vertical{
+  max-height: auto; */
+}
 .navbar-vertical .navbar-nav .nav-link {
   padding-left: 1rem;
   padding-right: 1rem;

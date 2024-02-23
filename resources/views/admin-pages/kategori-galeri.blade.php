@@ -68,7 +68,7 @@
                                         <span class="text-secondary text-xs font-weight-bold">{{ $item->updated_at}}</span>
                                     </td>
                                     <td class="align-middle text-center">
-                                        <form class="d-inline" onsubmit="return confirm('Sure o delete this category')"
+                                        <form class="d-inline" onsubmit="return confirm('Sure want to delete this category')"
                                             action="{{ url('kategori-galeri/' . $item->id . '/delete') }}" method="post">
                                             @csrf
                                             @method('DELETE')

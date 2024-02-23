@@ -30,8 +30,8 @@ class PageController extends Controller
     public function beranda()
     {
         $allPostingan = Postingan::orderBy('id', 'DESC')->paginate(4);
-        return view("pages.beranda")->with(['allPostingan' => $allPostingan]);
-        // return view('pages.beranda');
+        $allGallery = Galeri::orderBy('id', 'DESC')->paginate(4);
+        return view("pages.beranda")->with(['allPostingan' => $allPostingan, 'allGallery' => $allGallery]);
     }
 
     public function profil()
@@ -88,6 +88,72 @@ class PageController extends Controller
         ]);
     }
 
+    public function singleGaleriF()
+    {
+        $galeriF = Galeri::orderBy('created_at', 'desc')
+            ->where('kategori_galeri_id', 2)
+            ->get();
+
+        return view('pages.singleGaleriF', [
+            'galeriF' => $galeriF
+        ]);
+    }
+
+    public function singleGaleriB()
+    {
+        $galeriB = Galeri::orderBy('created_at', 'desc')
+            ->where('kategori_galeri_id', 3)
+            ->get();
+
+        return view('pages.singleGaleriB', [
+            'galeriB' => $galeriB
+        ]);
+    }
+
+    public function singleGaleriP()
+    {
+        $galeriP = Galeri::orderBy('created_at', 'desc')
+            ->where('kategori_galeri_id', 4)
+            ->get();
+
+        return view('pages.singleGaleriP$galeriP', [
+            'galeriP$galeriP' => $galeriP
+        ]);
+    }
+
+    public function singleGaleriE()
+    {
+        $galeriE = Galeri::orderBy('created_at', 'desc')
+            ->where('kategori_galeri_id', 5)
+            ->get();
+
+        return view('pages.singleGaleriE', [
+            'galeriE' => $galeriE
+        ]);
+    }
+
+    public function singleGaleriC()
+    {
+        $galeriC = Galeri::orderBy('created_at', 'desc')
+            ->where('kategori_galeri_id', 6)
+            ->get();
+
+        return view('pages.singleGaleriC', [
+            'galeriC' => $galeriC
+        ]);
+    }
+
+    public function singleGaleriT()
+    {
+        $galeriT = Galeri::orderBy('created_at', 'desc')
+            ->where('kategori_galeri_id', 7)
+            ->get();
+
+        return view('pages.singleGaleriT', [
+            'galeriT' => $galeriT
+        ]);
+    }
+
     public function talent()
     {
         // $allTalent = talent::orderBy('id','asc')->paginate(4);
@@ -112,8 +178,6 @@ class PageController extends Controller
 
     public function ppdb()
     {
-        // $ppdb = PPDB::get();
-        // return view("pages.ppdb")->with('ppdb', $ppdb);
         return view("pages.ppdb");
     }
 
@@ -131,10 +195,6 @@ class PageController extends Controller
 
     public function beritabykategori()
     {
-        // $allCategory = KategoriPostingan::orderBy('name', 'ASC')->get();
-        // $allPostingan = Postingan::where('kategori_postingan_id', $id)->get();
-        // return view('pages.berita')->with(['allPostingan'=> $allPostingan, 'allCategory' => $allCategory]);
-
         $postinganK = Postingan::orderBy('created_at', 'desc')
             ->where('kategori_postingan_id', 1)
             ->take(4)
@@ -157,9 +217,9 @@ class PageController extends Controller
         ]);
     }
 
-    public function singleBerita()
+    public function singleBerita($id)
     {
-        $allPostingan = Postingan::get();
+        $allPostingan = Postingan::find($id);
         return view('pages.singleBerita')->with(['allPostingan' => $allPostingan]);
     }
 }

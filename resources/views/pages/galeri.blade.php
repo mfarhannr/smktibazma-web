@@ -31,10 +31,18 @@
           </h3>
         </div>
         <div class="col-lg-6 text-end my-auto">
-          <a href="#" class="text-info icon-move-right">
+          <a href="/singleGaleriF" class="text-info icon-move-right">
             Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
           </a>
         </div>
+      </div>
+      <div style="text-align: justify" class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+          sit itaque molestias rem, omnis aliquam quisquam unde excepturi
+          pariatur labore nihil qui maxime distinctio fugit repudiandae,
+          architecto consequatur dolor ut.
+        </p>
       </div>
       <section>
         <div class="row">
@@ -42,10 +50,9 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain mb-4">
               <div class="card-header p-0 position-relative">
-                <a href="#" class="d-block blur-shadow-image">
+                <a href="/singleGaleriF" class="d-block blur-shadow-image">
                   <img src="{{asset('img/' . $F->image)}}" alt="img-blur-shadow"
-                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
-                    style="width: 300px; height: 200px;" />
+                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;" />
                 </a>
               </div>
             </div>
@@ -60,10 +67,18 @@
           </h3>
         </div>
         <div class="col-lg-6 text-end my-auto">
-          <a href="#" class="text-info icon-move-right">
+          <a href="/singleGaleriB" class="text-info icon-move-right">
             Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
           </a>
         </div>
+      </div>
+      <div style="text-align: justify" class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+          sit itaque molestias rem, omnis aliquam quisquam unde excepturi
+          pariatur labore nihil qui maxime distinctio fugit repudiandae,
+          architecto consequatur dolor ut.
+        </p>
       </div>
       <section>
         <div class="row">
@@ -71,10 +86,9 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain mb-4">
               <div class="card-header p-0 position-relative">
-                <a href="#" class="d-block blur-shadow-image">
+                <a href="/singleGaleriB" class="d-block blur-shadow-image">
                   <img src="{{asset('img/' . $B->image)}}" alt="img-blur-shadow"
-                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
-                    style="width: 300px; height: 200px;" />
+                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;" />
                 </a>
               </div>
             </div>
@@ -89,20 +103,28 @@
           </h3>
         </div>
         <div class="col-lg-6 text-end my-auto">
-          <a href="#" class="text-info icon-move-right">
+          <a href="/singleGaleriP" class="text-info icon-move-right">
             Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
           </a>
         </div>
-      </div><section>
+      </div>
+      <div style="text-align: justify" class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+          sit itaque molestias rem, omnis aliquam quisquam unde excepturi
+          pariatur labore nihil qui maxime distinctio fugit repudiandae,
+          architecto consequatur dolor ut.
+        </p>
+      </div>
+      <section>
         <div class="row">
           @foreach ($galeriPencakSilat as $P)
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain mb-4">
               <div class="card-header p-0 position-relative">
-                <a href="#" class="d-block blur-shadow-image">
+                <a href="/singleGaleriP" class="d-block blur-shadow-image">
                   <img src="{{asset('img/' . $P->image)}}" alt="img-blur-shadow"
-                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
-                    style="width: 300px; height: 200px;" />
+                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;" />
                 </a>
               </div>
             </div>
@@ -117,10 +139,18 @@
           </h3>
         </div>
         <div class="col-lg-6 text-end my-auto">
-          <a href="#" class="text-info icon-move-right">
+          <a href="/singleGaleriE" class="text-info icon-move-right">
             Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
           </a>
         </div>
+      </div>
+      <div style="text-align: justify" class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+          sit itaque molestias rem, omnis aliquam quisquam unde excepturi
+          pariatur labore nihil qui maxime distinctio fugit repudiandae,
+          architecto consequatur dolor ut.
+        </p>
       </div>
       <section>
         <div class="row">
@@ -128,10 +158,9 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain mb-4">
               <div class="card-header p-0 position-relative">
-                <a href="#" class="d-block blur-shadow-image">
+                <a href="/singleGaleriE" class="d-block blur-shadow-image">
                   <img src="{{asset('img/' . $E->image)}}" alt="img-blur-shadow"
-                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
-                    style="width: 300px; height: 200px;" />
+                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;" />
                 </a>
               </div>
             </div>
@@ -146,10 +175,18 @@
           </h3>
         </div>
         <div class="col-lg-6 text-end my-auto">
-          <a href="#" class="text-info icon-move-right">
+          <a href="/singleGaleriC" class="text-info icon-move-right">
             Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
           </a>
         </div>
+      </div>
+      <div style="text-align: justify" class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+          sit itaque molestias rem, omnis aliquam quisquam unde excepturi
+          pariatur labore nihil qui maxime distinctio fugit repudiandae,
+          architecto consequatur dolor ut.
+        </p>
       </div>
       <section>
         <div class="row">
@@ -157,10 +194,9 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain mb-4">
               <div class="card-header p-0 position-relative">
-                <a href="#" class="d-block blur-shadow-image">
+                <a href="/singleGaleriC" class="d-block blur-shadow-image">
                   <img src="{{asset('img/' . $C->image)}}" alt="img-blur-shadow"
-                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
-                    style="width: 300px; height: 200px;" />
+                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;" />
                 </a>
               </div>
             </div>
@@ -175,10 +211,18 @@
           </h3>
         </div>
         <div class="col-lg-6 text-end my-auto">
-          <a href="#" class="text-info icon-move-right">
+          <a href="/singleGaleriT" class="text-info icon-move-right">
             Lebih banyak <i class="fas fa-arrow-right text-sm" aria-hidden="true"></i>
           </a>
         </div>
+      </div>
+      <div style="text-align: justify" class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum,
+          sit itaque molestias rem, omnis aliquam quisquam unde excepturi
+          pariatur labore nihil qui maxime distinctio fugit repudiandae,
+          architecto consequatur dolor ut.
+        </p>
       </div>
       <section>
         <div class="row">
@@ -186,10 +230,9 @@
           <div class="col-lg-3 col-sm-6">
             <div class="card card-plain mb-4">
               <div class="card-header p-0 position-relative">
-                <a href="#" class="d-block blur-shadow-image">
+                <a href="/singleGaleriT" class="d-block blur-shadow-image">
                   <img src="{{asset('img/' . $T->image)}}" alt="img-blur-shadow"
-                    class="img-fluid shadow-sm border-radius-lg" loading="lazy"
-                    style="width: 300px; height: 200px;" />
+                    class="img-fluid shadow-sm border-radius-lg" loading="lazy" style="width: 300px; height: 200px;" />
                 </a>
               </div>
             </div>

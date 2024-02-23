@@ -72,11 +72,11 @@ class PostinganController extends Controller
         return redirect()->to('/create-postingan')->with('succes', 'Postingan Berhasil Diupdate');
         return redirect(route('admin.katalog.index'));
     }
-    public function show($id)
-    {
-        $allPostingan = Postingan::find($id);
-        return view('pages.singleBerita', ['allPostingan' => $allPostingan]);
-    }
+    // public function show($id)
+    // {
+    //     $allPostingan = Postingan::find($id);
+    //     return view('pages.singleBerita', ['allPostingan' => $allPostingan]);
+    // }
     public function destroy($id)
     {
         $allPostingan = Postingan::findOrFail($id);
