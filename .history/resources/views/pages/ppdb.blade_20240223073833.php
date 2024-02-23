@@ -73,7 +73,7 @@
 
         <!-- Content-2 -->
         <section>
-            <div class="container px-3">
+            <div class="container">
                 <div class="row">
                     <div class="mx-auto">
                         <div class="card">

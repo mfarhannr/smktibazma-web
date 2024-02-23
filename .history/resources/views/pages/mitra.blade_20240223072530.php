@@ -24,7 +24,7 @@
 <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6 he">
     <!-- Content-1 -->
     <section class="py-5">
-        <div class="container px-3">
+        <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg">
                     <div class="col-md">
@@ -63,7 +63,7 @@
 
     <!-- Content-2 -->
     <section class="py-5">
-        <div class="container px-3">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <div class="card mt-5 mt-md-0">

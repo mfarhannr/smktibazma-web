@@ -73,7 +73,7 @@
 
         <!-- Content-2 -->
         <section>
-            <div class="container px-3">
+            <div class="container">
                 <div class="row">
                     <div class="mx-auto">
                         <div class="card">
@@ -176,68 +176,71 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- End of Content-2 -->
+    </div>
+    </section>
+    <!-- End of Content-2 -->
 
-        <!-- Content-3 -->
-        <section class="py-4">
-            <div class="container px-3">
-                <div class="row align-items-center">
-                    <div class="col-lg">
-                        <div class="col-md">
-                            <div class="mt-4 text-justify">
-                                <p>
-                                    ⏳Pengisian formulir dan upload berkas maksimal 31 Januari 2024 (pukul 23.59)
-                                </p>
-                                <p style="font-weight:500; margin: 0;">
-                                    Keterbatasan dalam mengakses formulir online dapat menghubungi narahubung Pak Dzikri :
-                                    0812-1593-1522
-                                </p>
-                                <a class="btn btn-success px-4 me-sm-3 mt-2" href="https://wa.me/6281215931522"
-                                    target="_blank">
-                                    <i class="fa-brands fa-whatsapp"></i>
-                                    &nbsp; WhatsApp
-                                </a>
-                                <p style="margin: 16px 0px;">Terima Kasih,</p>
-                                <p>TIM SELEKSI PPDB SMK TI BAZMA</p>
-                                <p>Narahubung :</p>
-                                <div class="row mt-3">
-                                    <div class="col-lg-3 mb-3">
-                                        <div class="card card-body">
-                                            <div class="author">
-                                                <div class="icon icon-shape bg-gradient-info shadow-info text-center">
-                                                    <i class="fi fi-brands-whatsapp"></i>
-                                                </div>
-                                                <h5 class="my-auto mx-auto phenomena-bold">
-                                                    08 1111 4433 9
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <!-- Content-3 -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg">
+                    <div class="col-md">
+                        <div class="mt-4 text-justify">
+                            <p>
+                                ⏳Pengisian formulir dan upload berkas maksimal 31 Januari 2024 (pukul 23.59)
+                            </p>
+                            <p style="font-weight:500; margin: 0;">
+                                Keterbatasan dalam mengakses formulir online dapat menghubungi narahubung Pak Dzikri :
+                                0812-1593-1522
+                            </p>
+                            <a class="btn btn-success px-4 me-sm-3 mt-2" href="https://wa.me/6281215931522" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                &nbsp; WhatsApp
+                            </a>
+                            <p style="margin: 16px 0px;">Terima Kasih,</p>
+                            <p>TIM SELEKSI PPDB SMK TI BAZMA</p>
+                            <p>Narahubung :</p>
+                            <div class="row mt-3">
                                 <div class="col-lg-3 mb-3">
                                     <div class="card card-body">
                                         <div class="author">
                                             <div class="icon icon-shape bg-gradient-info shadow-info text-center">
-                                                <i class="fi fi-brands-instagram"></i>
+                                                <i class="fi fi-brands-whatsapp"></i>
                                             </div>
                                             <h5 class="my-auto mx-auto phenomena-bold">
-                                                @smktibazma
+                                                08 1111 4433 9
                                             </h5>
                                         </div>
+                                        <h5 class="my-auto mx-auto phenomena-bold">
+                                            08 1111 4433 9
+                                        </h5>
                                     </div>
                                 </div>
-
                             </div>
+                            <div class="col-lg-3 mb-3">
+                                <div class="card card-body">
+                                    <div class="author">
+                                        <div class="icon icon-shape bg-gradient-info shadow-info text-center">
+                                            <i class="fi fi-brands-instagram"></i>
+                                        </div>
+                                        <h5 class="my-auto mx-auto phenomena-bold">
+                                            @smktibazma
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
+    </section>
 
-        </section>
-
-        <!-- End of Content-3 -->
-        {{-- <section class="py-5">
+    <!-- End of Content-3 -->
+    {{-- <section class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg">

@@ -73,7 +73,7 @@
 
         <!-- Content-2 -->
         <section>
-            <div class="container px-3">
+            <div class="container">
                 <div class="row">
                     <div class="mx-auto">
                         <div class="card">
@@ -181,7 +181,7 @@
 
         <!-- Content-3 -->
         <section class="py-4">
-            <div class="container px-3">
+            <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg">
                         <div class="col-md">
@@ -212,6 +212,9 @@
                                                     08 1111 4433 9
                                                 </h5>
                                             </div>
+                                            <h5 class="my-auto mx-auto phenomena-bold">
+                                                08 1111 4433 9
+                                            </h5>
                                         </div>
                                     </div>
                                 </div>
@@ -233,11 +236,11 @@
                     </div>
                 </div>
             </div>
+    </div>
+    </section>
 
-        </section>
-
-        <!-- End of Content-3 -->
-        {{-- <section class="py-5">
+    <!-- End of Content-3 -->
+    {{-- <section class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg">

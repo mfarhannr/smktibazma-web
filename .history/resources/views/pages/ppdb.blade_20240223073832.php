@@ -73,7 +73,7 @@
 
         <!-- Content-2 -->
         <section>
-            <div class="container px-3">
+            <div class="container">
                 <div class="row">
                     <div class="mx-auto">
                         <div class="card">
@@ -181,7 +181,7 @@
 
         <!-- Content-3 -->
         <section class="py-4">
-            <div class="container px-3">
+            <div class="container ">
                 <div class="row align-items-center">
                     <div class="col-lg">
                         <div class="col-md">

@@ -63,7 +63,7 @@
 
     <!-- Content-2 -->
     <section class="py-5">
-        <div class="container px-3">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-5">
                     <div class="card mt-5 mt-md-0">
