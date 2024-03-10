@@ -20,13 +20,13 @@
 <body>
     {{-- card 1 --}}
     <div class="col-10 mx-auto">
-        <a href="/talent"  class="btn btn-secondary my-4">Back</a>
+        <a href="/talent" class="btn btn-secondary my-4">Back</a>
     </div>
     <div class="col-10 mx-auto card border">
         <div class="row py-5">
             <div class="col-xl-4 col-md-6 px-5">
                 <img class="img border-radius-md max-width-300 w-100 mx-auto d-block"
-                    src="{{ asset('img/' . $KatalogTalenta->gambar) }}" loading="lazy" alt="card image">
+                    src="{{ asset('img/' . $organisasi->gambar) }}" loading="lazy" alt="card image">
                 {{-- media sosial --}}
                 <div class="max-width-300 mx-auto mt-3">
                     <div class="row h4 text-center">
@@ -40,7 +40,7 @@
                                     aria-labelledby="Dropdown1">
                                     <li>
                                         <a class="dropdown-item" href="#">
-                                            {{ $KatalogTalenta->instagram }}
+                                            {{ $organisasi->instagram }}
                                         </a>
                                     </li>
                                 </ul>
@@ -56,7 +56,7 @@
                                     aria-labelledby="Dropdown1">
                                     <li>
                                         <a class="dropdown-item" href="#">
-                                            {{ $KatalogTalenta->linkedin }}
+                                            {{ $organisasi->linkedin }}
                                         </a>
                                     </li>
                                 </ul>
@@ -72,7 +72,7 @@
                                     aria-labelledby="Dropdown1">
                                     <li>
                                         <a class="dropdown-item" href="#">
-                                            {{ $KatalogTalenta->email }}
+                                            {{ $organisasi->email }}
                                         </a>
                                     </li>
                                 </ul>
@@ -88,7 +88,7 @@
                                     aria-labelledby="Dropdown1">
                                     <li>
                                         <a class="dropdown-item" href="#">
-                                            {{ $KatalogTalenta->github }}
+                                            {{ $organisasi->github }}
                                         </a>
                                     </li>
                                 </ul>
@@ -104,7 +104,7 @@
                                     aria-labelledby="Dropdown1">
                                     <li>
                                         <a class="dropdown-item" href="#">
-                                            {{ $KatalogTalenta->nomor }}
+                                            {{ $organisasi->nomor }}
                                         </a>
                                     </li>
                                 </ul>
@@ -116,10 +116,10 @@
             </div>
             <div class="col-xl-8 col-md-5 px-xxl-5 px-md-2 px-5 mt-4">
                 <i class="material-icons"></i>
-                <h3 class=" mt-x1-0">Hello, Saya {{ $KatalogTalenta->name }}</h3>
-                <h5 class=" mt-x1-0">Saya mempunyai keahlian di{{ $KatalogTalenta->bidang }}</h5>
+                <h3 class=" mt-x1-0">Hello, Saya {{ $organisasi->name }}</h3>
+                <h5 class=" mt-x1-0">Saya mempunyai keahlian di{{ $organisasi->bidang }}</h5>
                 <div class="">
-                    {!! $KatalogTalenta->deskripsi !!}
+                    {!! $organisasi->deskripsi !!}
                 </div>
                 <div class="buttons">
                     <button class="btn bg-gradient-dark mt-4" onclick="window.open('./assets/CV Formal V.4.pdf')">View
@@ -149,17 +149,18 @@
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
-                                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
-                                    <p class="text-sm mt-3 mb-2">
-                                        People care about how you see the world, how you think, what motivates you, what
-                                        youre struggling with or afraid of.
-                                    </p>
-                                    <span class="badge badge-sm bg-gradient-danger">Order</span>
-                                    <span class="badge badge-sm bg-gradient-danger">#1832412</span>
+
+                                        <h6 class="text-dark text-sm font-weight-bold mb-0">
+                                            {{ $organisasi->nama_organisasi }}</h6>
+                                        <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">
+                                            {{ $organisasi->tanggal_organisasi }}</p>
+                                        <p class="text-sm mt-3 mb-2">
+                                            {{ $organisasi->deskripsi_organisasi }}
+                                        </p>
+
                                 </div>
                             </div>
-                            <div class="timeline-block mb-3">
+                            {{-- <div class="timeline-block mb-3">
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
@@ -189,7 +190,7 @@
                                     <span class="badge badge-sm bg-gradient-warning">#4395133</span>
                                     <span class="badge badge-sm bg-gradient-warning">Priority</span>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -205,17 +206,14 @@
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
-                                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
+                                    <h6 class="text-dark text-sm font-weight-bold mb-0"> {{ $organisasi->nama_prestasi }}</h6>
+                                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">{{ $organisasi->tanggal_prestasi }}</p>
                                     <p class="text-secondary text-sm mt-3 mb-2">
-                                        People care about how you see the world, how you think, what motivates you, what
-                                        you’re struggling with or afraid of.
+                                        {{ $organisasi->deskripsi_prestasi }}
                                     </p>
-                                    <span class="badge badge-sm bg-gradient-danger">Order</span>
-                                    <span class="badge badge-sm bg-gradient-danger">#1832412</span>
                                 </div>
                             </div>
-                            <div class="timeline-block mb-3">
+                            {{-- <div class="timeline-block mb-3">
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
@@ -245,7 +243,7 @@
                                     <span class="badge badge-sm bg-gradient-warning">#4395133</span>
                                     <span class="badge badge-sm bg-gradient-warning">Priority</span>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -266,19 +264,16 @@
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
-                                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
+                                    <h6 class="text-dark text-sm font-weight-bold mb-0">{{ $organisasi->nama_sertifikasi }}</h6>
+                                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">{{ $organisasi->tanggal_sertifikasi }}</p>
                                     <p class="text-sm mt-3 mb-2">
-                                        People care about how you see the world, how you think, what motivates you, what
-                                        youre struggling with or afraid of.
+                                        {{ $organisasi->deskripsi_sertifikasi }}
                                     </p>
-                                    <span class="badge badge-sm bg-gradient-danger">Order</span>
-                                    <span class="badge badge-sm bg-gradient-danger">#1832412</span>
                                 </div>
                             </div>
 
 
-                            <div class="timeline-block mb-3">
+                            {{-- <div class="timeline-block mb-3">
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
@@ -308,7 +303,7 @@
                                     <span class="badge badge-sm bg-gradient-warning">#4395133</span>
                                     <span class="badge badge-sm bg-gradient-warning">Priority</span>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -324,17 +319,15 @@
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
-                                    <h6 class="text-dark text-sm font-weight-bold mb-0">New order #1832412</h6>
-                                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">21 DEC 11 PM</p>
+                                    <h6 class="text-dark text-sm font-weight-bold mb-0">{{ $organisasi->nama_pengalaman }}</h6>
+                                    <p class="text-secondary font-weight-bold text-xs mt-1 mb-0">{{ $organisasi->tanggal_pengalaman }}/p>
                                     <p class="text-secondary text-sm mt-3 mb-2">
-                                        People care about how you see the world, how you think, what motivates you, what
-                                        you’re struggling with or afraid of.
+                                        {{ $organisasi->deskripsi_pengalaman }}
                                     </p>
-                                    <span class="badge badge-sm bg-gradient-danger">Order</span>
-                                    <span class="badge badge-sm bg-gradient-danger">#1832412</span>
+
                                 </div>
                             </div>
-                            <div class="timeline-block mb-3">
+                            {{-- <div class="timeline-block mb-3">
                                 <span class="timeline-step bg-dark">
                                 </span>
                                 <div class="timeline-content">
@@ -364,7 +357,7 @@
                                     <span class="badge badge-sm bg-gradient-warning">#4395133</span>
                                     <span class="badge badge-sm bg-gradient-warning">Priority</span>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

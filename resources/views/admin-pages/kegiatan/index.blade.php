@@ -1,25 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('layouts.navbars.auth.topnav', ['title' => 'katalogtalenta'])
+    @include('layouts.navbars.auth.topnav', ['title' => 'Kegiatan'])
     <div class="row mt-4 mx-4">
         <div class="col-12">
-            {{-- <div class="alert alert-light" role="alert">
-                This feature is available in <strong>Argon Dashboard 2 Pro Laravel</strong>. Check it
-                <strong>
-                    <a href="https://www.creative-tim.com/product/argon-dashboard-pro-laravel" target="_blank">
-                        here
-                    </a>
-                </strong>
-            </div> --}}
-            <div class="card mb-4">
-                {{-- <div class="card-header pb-0">
-                    <h6>Users</h6>
-                </div> --}}
 
-                <div class="card-header pc-0 d-flex justify-content-between">
-                    <h6 class="mb-0">Katalog Talenta</h6>
-                    <a href="/admin-katalogtalenta/create" class="btn bg-gradient-dark btn-sm ">Tambah katalogtalenta</a>
+            <div class="card mb-4">
+                <div class="card-header pc-0 d-flex mb-0 justify-content-between">
+                    <h5 class=" mb-0 text-center">Kegiatan</h5>
+                    <a href="/admin-kegiatan/create" class="text-center mb-0 btn bg-gradient-dark btn-sm">Tambah
+                        Kegiatan</a>
                 </div>
 
                 <div class="card-body px-0 pt-0 pb-2">
@@ -27,114 +17,67 @@
                         <table class="table align-items-center mb-0">
                             <thead>
                                 <tr>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 px-4">
-                                        id
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                                        style="width: 10%">
+                                        No
                                     </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                                        style="width: 25%">
+                                        Judul
+                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                                        style="width: 25%">
                                         Gambar
                                     </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Nama
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Bidang
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        instagram
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        linkedin
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Github
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        No Hp
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                         Deskripsi
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                         Gmail
-                                    </th>
-                                    <th
-                                        class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">
-                                        Action
-                                    </th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                                        style="width: 25%">
+                                        Deskripsi</th>
+                                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7"
+                                        style="width: 15%">
+                                        Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 @php
                                     $i = 1;
                                 @endphp
-                                @forelse ($KatalogTalenta as $item)
+                                @foreach ($kegiatan as $item)
                                     <tr>
-                                        {{-- <td>
-                                            <h6 class="mb-0 mx-3 text-sm">{{ $item->judul }}</h6>
-
-                                        </td> --}}
                                         <td>
-                                            <p class="text-sm text-center font-weight-bold mb-0">{{ $i }}</p>
+                                            <h6 class="text-center mb-0 mx-3 text-sm">{{$i}}</h6>
+
                                         </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <div>
+                                        <td>
+                                            <h6 class="text-center mb-0 mx-3 text-sm">{{ $item->judul }}</h6>
+
+                                        </td>
+                                        <td>
+                                            <div class="text-center">
                                                 <img src="{{ asset('img/' . $item->gambar) }}"
                                                     class="border-radius-lg shadow-sm height-100 w-auto" alt="">
                                             </div>
                                         </td>
                                         <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{{ $item->name }}</p>
+                                            <p class="text-sm font-weight-bold mb-0">{{ $item->deskripsi }}</p>
                                         </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{{ $item->bidang }}</p>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{{ $item->instagram }}</p>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{{ $item->linkedin }}</p>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{{ $item->github }}</p>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{{ $item->nomor }}</p>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{!! Str::limit($item->deskripsi, 12, '...') !!}</p>
-                                        </td>
-                                        <td class="align-middle text-center text-sm">
-                                            <p class="text-sm font-weight-bold mb-0">{{ $item->email }}</p>
-                                        </td>
-                                        <td class="align-middle text-end">
-                                            <div class="d-flex px-3 py-1 justify-content-center align-items-center">
-                                                <a href="/admin-katalogtalenta/{{ $item->id }}/edit" class="me-3"
-                                                    data-bs-toggle="tooltip" data-bs-original-title="Edit katalogtalenta">
-                                                    <i class="fas fa-user-edit text-secondary" aria-hidden="true"></i>
-                                                </a>
-                                                <a href="/admin-organisasi/create" class="me-3"
-                                                    data-bs-toggle="tooltip" data-bs-original-title="Buat Resume">
-                                                    <i class="fas fa-user-edit text-secondary" aria-hidden="true"></i>
-                                                </a>
-                                                <form action="/admin-katalogtalenta/{{ $item->id }}" method="delete">
+                                        <td class="align-middle text-center">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <form action="/admin-kegiatan/{{ $item->id }}/edit" method="PUT"
+                                                    class="text-center mx-2">
+                                                    @csrf
+                                                    <button class="btn btn-xs btn-secondary mb-0 font-weight-bold text-xs">
+                                                        <span class="btn-inner--icon"><i
+                                                                class="fa-regular fa-pen-to-square"></i></span>
+                                                        <span class="btn-inner--text"> Edit</span>
+                                                    </button>
+                                                </form>
+                                                <form action="/admin-kegiatan/{{ $item->id }}" method="POST">
                                                     @csrf
                                                     @method('delete')
-                                                    <button
-                                                        onclick="confirm('Are you sure you want to remove the katalogtalenta?') || event.stopImmediatePropagation()"
-                                                        data-bs-toggle="tooltip"
-                                                        data-bs-original-title="Delete katalogtalenta"
-                                                        class="border-0 bg-white" value="Delete">
-                                                        <i class="fas fa-trash text-secondary" aria-hidden="true"></i>
+                                                    <button class="btn btn-xs btn-danger mb-0 font-weight-bold text-xs">
+                                                        <span class="btn-inner--icon"><i
+                                                                class="fas fa-trash-alt"></i></span>
+                                                        <span class="btn-inner--text"> Delete</span>
                                                     </button>
                                                 </form>
                                                 </span>
@@ -144,8 +87,7 @@
                                     @php
                                         $i++;
                                     @endphp
-                                @empty
-                                @endforelse
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

@@ -1,3 +1,12 @@
+    Route::get('admin-organisasi', [OrganisasiController::class, 'index']);
+    Route::get('admin-organisasi/{id}/resume', [OrganisasiController::class, 'resume']);
+    Route::get('admin-organisasi/create', [OrganisasiController::class, 'create']);
+    Route::post('admin-organisasi', [OrganisasiController::class, 'store'])->name('organisasi.store');
+    Route::put('admin-organisasi/{id}', [OrganisasiController::class, 'update']);
+    Route::get('admin-organisasi/{id}/edit', [OrganisasiController::class, 'edit']);
+    Route::get('single-talent/{id}', [OrganisasiController::class, 'show']);
+    Route::delete('admin-organisasi/{id}', [organisasiController::class, 'destroy']);
+
 <?php
 
 use Illuminate\Support\Facades\Route;

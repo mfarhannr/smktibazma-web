@@ -141,3 +141,31 @@
                 @endif
             @endauth
 </aside>
+
+                <li class="nav-item">
+                    <a data-bs-toggle="collapse" href="#kesiswaan" class="nav-link " aria-controls="kesiswaan"
+                        role="button" aria-expanded="true">
+                            class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+                        <div
+                            <i class="ni ni-folder-17 text-dark text-sm opacity-10" aria-hidden="true"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Resume</span>
+                    </a>
+                    <div class="collapse show " id="kesiswaan" style="">
+                        <ul class="nav ms-4">
+                            <li class="nav-item ">
+                                    href="{{ route('page', ['page' => 'admin-organisasi']) }}">
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-organisasi') == true ? 'active' : '' }} "
+                                </a>
+                                    <span class="sidenav-normal ps-2">semua </span>
+                            </li>
+                                <a class="nav-link {{ str_contains(request()->url(), 'admin-prestasi') == true ? 'active' : '' }} "
+                            {{-- <li class="nav-item ">
+                                    href="{{ route('page', ['page' => 'admin-prestasi']) }}">
+                                    <span class="sidenav-normal ps-2">Prestasi</span>
+                                </a>
+                            </li> --}}
+                        </ul>
+                    </div>
+                    </a>
+                </li>

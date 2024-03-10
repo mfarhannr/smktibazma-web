@@ -16,7 +16,7 @@
           </div>
         </div>
       </header>
-      
+
       <!-- End Hero -->
     <div class="card card-body  mx-3 mx-md-4 mt-n6 mb-4">
         {{-- <section>
@@ -90,10 +90,10 @@
         <div class="container talent ">
             <div class="row">
                 @foreach ($KatalogTalenta as $item)
-                    <div class="itemBox col-lg-3 col-sm-6" data-item="{{ substr($item->talent, 0, 3) }}">
+                    <div class="itemBox col-lg-3 col-sm-6" data-item="{{ substr($item->talent, 0, 3) }}"><link rel="stylesheet" href="style.css">
                         <div class="card card-plain">
                             <div class="card-header p-0 position-relative">
-                                <a class="d-block blur-shadow-image" href="singleTalent/{{$item->id}}">
+                                <a class="d-block blur-shadow-image" href="single-talent/{{$item->id}}">
                                     <img src="{{ asset('img/' . $item->gambar) }}" alt="img-blur-shadow"
                                         class="hover-img img-fluid border-radius-lg" style="height: 200px" loading="lazy">
                                 </a>

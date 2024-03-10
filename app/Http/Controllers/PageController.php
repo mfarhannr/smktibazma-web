@@ -223,3 +223,9 @@ class PageController extends Controller
         return view('pages.singleBerita')->with(['allPostingan' => $allPostingan]);
     }
 }
+
+    public function singleTalent()
+    {
+        $organisasis = Organisasi::get();
+        return view('pages.singleTalent')->with(['organisasis'=> $organisasis]);
+    }
